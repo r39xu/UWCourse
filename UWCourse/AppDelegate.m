@@ -13,6 +13,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSUserDefaults *bookmark = [NSUserDefaults standardUserDefaults];
+    NSString *term = @"1141";
+    [bookmark setObject:term forKey:@"Term"];
+    
+    sleep(2);
     return YES;
 }
 							
