@@ -203,7 +203,7 @@
                     for (NSString *lecFrame in lectureFrame){
                         CGRect frame1 = CGRectFromString(lecFrame);
                         if (CGRectIntersectsRect(frame, frame1)){
-                            UIAlertView *alert1 = [[UIAlertView alloc]initWithTitle:@"UWCourse" message:[NSString stringWithFormat:@"You have time conflict with your existing courses:%@%@",courseFrame[@"coursename"],courseFrame[@"coursenum"]] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Edit chosen courses", nil];
+                            UIAlertView *alert1 = [[UIAlertView alloc]initWithTitle:@"UWCourse" message:[NSString stringWithFormat:@"You have time conflict with your existing courses:%@%@",courseFrame[@"coursename"],courseFrame[@"coursenum"]] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Edit", nil];
                             [alert1 show];
                             return;
                         }
@@ -324,7 +324,14 @@
     //self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:2];
 }
 
-
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    // the user clicked one of the OK/Cancel buttons
+    if (buttonIndex == 1)
+    {
+        self.tabBarController.selectedViewController = [self.tabBarController.viewControllers objectAtIndex:1];
+        
+    }
+}
 
 - (IBAction)hitLEC:(id)sender {
     self.isLEC = YES;

@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="FUCK ME" id="2dF-Nj-Cma">
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="2dF-Nj-Cma">
                             <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -581,7 +581,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calenda" width="14" height="15"/>
+        <image name="calenda" width="50" height="50"/>
         <image name="crown" width="50" height="50"/>
         <image name="diary" width="50" height="50"/>
         <image name="disclosure" width="12" height="14"/>

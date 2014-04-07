@@ -42,7 +42,7 @@
 		5D4F835D18D6493E00903ED0 /* BookMarkTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F835C18D6493E00903ED0 /* BookMarkTVC.m */; };
 		5D4F836018D6495100903ED0 /* SubBookMarkTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F835F18D6495100903ED0 /* SubBookMarkTVC.m */; };
 		5DCA012018EA4C8E00BC1486 /* CWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA011F18EA4C8E00BC1486 /* CWStatusBarNotification.m */; };
-		5DCA012318EDAD4700BC1486 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA012218EDAD4700BC1486 /* Reachability.m */; };
+		5DCA012618F07D7500BC1486 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA012518F07D7500BC1486 /* Reachability.m */; };
 		5DD4206618D8D56B0020DC26 /* MasterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4206518D8D56B0020DC26 /* MasterVC.m */; };
 /* End PBXBuildFile section */
 
@@ -117,8 +117,8 @@
 		5D4F835F18D6495100903ED0 /* SubBookMarkTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubBookMarkTVC.m; sourceTree = "<group>"; };
 		5DCA011E18EA4C8E00BC1486 /* CWStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWStatusBarNotification.h; path = "../../../../Desktop/Stuff/CWStatusBarNotification-master 2/CWStatusBarNotification/CWStatusBarNotification.h"; sourceTree = "<group>"; };
 		5DCA011F18EA4C8E00BC1486 /* CWStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWStatusBarNotification.m; path = "../../../../Desktop/Stuff/CWStatusBarNotification-master 2/CWStatusBarNotification/CWStatusBarNotification.m"; sourceTree = "<group>"; };
-		5DCA012118EDAD4700BC1486 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../../../Desktop/Reachability-master/Reachability.h"; sourceTree = "<group>"; };
-		5DCA012218EDAD4700BC1486 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../../../Desktop/Reachability-master/Reachability.m"; sourceTree = "<group>"; };
+		5DCA012418F07D7500BC1486 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5DCA012518F07D7500BC1486 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5DD4206418D8D56B0020DC26 /* MasterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterVC.h; sourceTree = "<group>"; };
 		5DD4206518D8D56B0020DC26 /* MasterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -273,8 +273,8 @@
 		5D4F833D18D0ED1F00903ED0 /* Subject */ = {
 			isa = PBXGroup;
 			children = (
-				5DCA012118EDAD4700BC1486 /* Reachability.h */,
-				5DCA012218EDAD4700BC1486 /* Reachability.m */,
+				5DCA012418F07D7500BC1486 /* Reachability.h */,
+				5DCA012518F07D7500BC1486 /* Reachability.m */,
 				5D4F833718D0EC7700903ED0 /* SubjectTVC.h */,
 				5D4F833818D0EC7700903ED0 /* SubjectTVC.m */,
 				5D4F833A18D0ECFA00903ED0 /* SubSubjectTVC.h */,
@@ -457,7 +457,7 @@
 				5D4F835918D635C000903ED0 /* SubRecentTVC.m in Sources */,
 				5D4AA10518E14BFE00474340 /* CustomVC.m in Sources */,
 				5D4AA0F818E0828D00474340 /* ViewController.m in Sources */,
-				5DCA012318EDAD4700BC1486 /* Reachability.m in Sources */,
+				5DCA012618F07D7500BC1486 /* Reachability.m in Sources */,
 				5D4F833918D0EC7700903ED0 /* SubjectTVC.m in Sources */,
 				5D4AA0F718E0828D00474340 /* TableView.m in Sources */,
 				5D4AA0F918E0828D00474340 /* EventView.m in Sources */,

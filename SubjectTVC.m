@@ -146,7 +146,7 @@
     }
     else
     {
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"NO INTERNET" message:@"FUCK" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"NO INTERNET" message:@"Plsease connect your device to internet" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
