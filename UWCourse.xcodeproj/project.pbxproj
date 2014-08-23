@@ -10,9 +10,6 @@
 		5D004EF018DB39FF00C109F6 /* MoreDetailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D004EEF18DB39FF00C109F6 /* MoreDetailTVC.m */; };
 		5D004EF318DB4B0200C109F6 /* DetailCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D004EF218DB4B0200C109F6 /* DetailCustomCell.m */; };
 		5D004EF618DC992A00C109F6 /* WebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D004EF518DC992A00C109F6 /* WebVC.m */; };
-		5D4AA0F718E0828D00474340 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4AA0F218E0828D00474340 /* TableView.m */; };
-		5D4AA0F818E0828D00474340 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4AA0F418E0828D00474340 /* ViewController.m */; };
-		5D4AA0F918E0828D00474340 /* EventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4AA0F618E0828D00474340 /* EventView.m */; };
 		5D4AA10518E14BFE00474340 /* CustomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4AA10418E14BFE00474340 /* CustomVC.m */; };
 		5D4AA10818E348AC00474340 /* SubjectScheduleTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4AA10718E348AC00474340 /* SubjectScheduleTVC.m */; };
 		5D4AA10D18E4F42900474340 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4AA10C18E4F42900474340 /* QuartzCore.framework */; };
@@ -22,8 +19,6 @@
 		5D4F830318D0BAD200903ED0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D4F830118D0BAD200903ED0 /* InfoPlist.strings */; };
 		5D4F830518D0BAD200903ED0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F830418D0BAD200903ED0 /* main.m */; };
 		5D4F830918D0BAD200903ED0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F830818D0BAD200903ED0 /* AppDelegate.m */; };
-		5D4F830C18D0BAD200903ED0 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4F830A18D0BAD200903ED0 /* Main_iPhone.storyboard */; };
-		5D4F830F18D0BAD200903ED0 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4F830D18D0BAD200903ED0 /* Main_iPad.storyboard */; };
 		5D4F831418D0BAD200903ED0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4F831318D0BAD200903ED0 /* Images.xcassets */; };
 		5D4F831B18D0BAD300903ED0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4F831A18D0BAD300903ED0 /* XCTest.framework */; };
 		5D4F831C18D0BAD300903ED0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4F82F818D0BAD200903ED0 /* Foundation.framework */; };
@@ -41,9 +36,13 @@
 		5D4F835918D635C000903ED0 /* SubRecentTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F835818D635C000903ED0 /* SubRecentTVC.m */; };
 		5D4F835D18D6493E00903ED0 /* BookMarkTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F835C18D6493E00903ED0 /* BookMarkTVC.m */; };
 		5D4F836018D6495100903ED0 /* SubBookMarkTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D4F835F18D6495100903ED0 /* SubBookMarkTVC.m */; };
-		5DCA012018EA4C8E00BC1486 /* CWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA011F18EA4C8E00BC1486 /* CWStatusBarNotification.m */; };
 		5DCA012618F07D7500BC1486 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DCA012518F07D7500BC1486 /* Reachability.m */; };
 		5DD4206618D8D56B0020DC26 /* MasterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4206518D8D56B0020DC26 /* MasterVC.m */; };
+		9B38784F19A7E4BC00DA14FF /* UWCourse_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B38784E19A7E4BC00DA14FF /* UWCourse_iPhone.storyboard */; };
+		9B38785219A7E54300DA14FF /* TimeTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38785119A7E54300DA14FF /* TimeTableVC.m */; };
+		9B38785319A7E6C300DA14FF /* UWCourse_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B38784E19A7E4BC00DA14FF /* UWCourse_iPhone.storyboard */; };
+		9B38785619A91AB700DA14FF /* EventVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38785519A91AB700DA14FF /* EventVCViewController.m */; };
+		9B77EFA819A9403200981975 /* CWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B77EFA719A9403200981975 /* CWStatusBarNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +62,6 @@
 		5D004EF218DB4B0200C109F6 /* DetailCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCustomCell.m; sourceTree = "<group>"; };
 		5D004EF418DC992A00C109F6 /* WebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebVC.h; sourceTree = "<group>"; };
 		5D004EF518DC992A00C109F6 /* WebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebVC.m; sourceTree = "<group>"; };
-		5D4AA0F118E0828D00474340 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableView.h; path = ../../TimeTable/TimeTable/TableView.h; sourceTree = "<group>"; };
-		5D4AA0F218E0828D00474340 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableView.m; path = ../../TimeTable/TimeTable/TableView.m; sourceTree = "<group>"; };
-		5D4AA0F318E0828D00474340 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../TimeTable/TimeTable/ViewController.h; sourceTree = "<group>"; };
-		5D4AA0F418E0828D00474340 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../TimeTable/TimeTable/ViewController.m; sourceTree = "<group>"; };
-		5D4AA0F518E0828D00474340 /* EventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventView.h; path = ../../TimeTable/TimeTable/EventView.h; sourceTree = "<group>"; };
-		5D4AA0F618E0828D00474340 /* EventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventView.m; path = ../../TimeTable/TimeTable/EventView.m; sourceTree = "<group>"; };
 		5D4AA10318E14BFE00474340 /* CustomVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomVC.h; sourceTree = "<group>"; };
 		5D4AA10418E14BFE00474340 /* CustomVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomVC.m; sourceTree = "<group>"; };
 		5D4AA10618E348AC00474340 /* SubjectScheduleTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectScheduleTVC.h; sourceTree = "<group>"; };
@@ -84,8 +77,6 @@
 		5D4F830618D0BAD200903ED0 /* UWCourse-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UWCourse-Prefix.pch"; sourceTree = "<group>"; };
 		5D4F830718D0BAD200903ED0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D4F830818D0BAD200903ED0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5D4F830B18D0BAD200903ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		5D4F830E18D0BAD200903ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		5D4F831318D0BAD200903ED0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5D4F831918D0BAD300903ED0 /* UWCourseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWCourseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4F831A18D0BAD300903ED0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -115,12 +106,17 @@
 		5D4F835C18D6493E00903ED0 /* BookMarkTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookMarkTVC.m; sourceTree = "<group>"; };
 		5D4F835E18D6495100903ED0 /* SubBookMarkTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubBookMarkTVC.h; sourceTree = "<group>"; };
 		5D4F835F18D6495100903ED0 /* SubBookMarkTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubBookMarkTVC.m; sourceTree = "<group>"; };
-		5DCA011E18EA4C8E00BC1486 /* CWStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CWStatusBarNotification.h; path = "../../../../Desktop/Stuff/CWStatusBarNotification-master 2/CWStatusBarNotification/CWStatusBarNotification.h"; sourceTree = "<group>"; };
-		5DCA011F18EA4C8E00BC1486 /* CWStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CWStatusBarNotification.m; path = "../../../../Desktop/Stuff/CWStatusBarNotification-master 2/CWStatusBarNotification/CWStatusBarNotification.m"; sourceTree = "<group>"; };
 		5DCA012418F07D7500BC1486 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		5DCA012518F07D7500BC1486 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5DD4206418D8D56B0020DC26 /* MasterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterVC.h; sourceTree = "<group>"; };
 		5DD4206518D8D56B0020DC26 /* MasterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterVC.m; sourceTree = "<group>"; };
+		9B38784E19A7E4BC00DA14FF /* UWCourse_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = UWCourse_iPhone.storyboard; path = UWCourseTests/UWCourse_iPhone.storyboard; sourceTree = SOURCE_ROOT; };
+		9B38785019A7E54300DA14FF /* TimeTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableVC.h; sourceTree = "<group>"; };
+		9B38785119A7E54300DA14FF /* TimeTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableVC.m; sourceTree = "<group>"; };
+		9B38785419A91AB700DA14FF /* EventVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventVCViewController.h; sourceTree = "<group>"; };
+		9B38785519A91AB700DA14FF /* EventVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventVCViewController.m; sourceTree = "<group>"; };
+		9B77EFA619A9403200981975 /* CWStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWStatusBarNotification.h; sourceTree = "<group>"; };
+		9B77EFA719A9403200981975 /* CWStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWStatusBarNotification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,18 +167,10 @@
 		5D4AA0F018E0826800474340 /* TImeTable */ = {
 			isa = PBXGroup;
 			children = (
-				5DCA011E18EA4C8E00BC1486 /* CWStatusBarNotification.h */,
-				5DCA011F18EA4C8E00BC1486 /* CWStatusBarNotification.m */,
 				5D4AA10618E348AC00474340 /* SubjectScheduleTVC.h */,
 				5D4AA10718E348AC00474340 /* SubjectScheduleTVC.m */,
 				5D4AA10318E14BFE00474340 /* CustomVC.h */,
 				5D4AA10418E14BFE00474340 /* CustomVC.m */,
-				5D4AA0F118E0828D00474340 /* TableView.h */,
-				5D4AA0F218E0828D00474340 /* TableView.m */,
-				5D4AA0F318E0828D00474340 /* ViewController.h */,
-				5D4AA0F418E0828D00474340 /* ViewController.m */,
-				5D4AA0F518E0828D00474340 /* EventView.h */,
-				5D4AA0F618E0828D00474340 /* EventView.m */,
 			);
 			name = TImeTable;
 			sourceTree = "<group>";
@@ -221,6 +209,8 @@
 		5D4F82FE18D0BAD200903ED0 /* UWCourse */ = {
 			isa = PBXGroup;
 			children = (
+				9B77EFA519A9402200981975 /* StatusBar */,
+				9B73302719A6C12B001D2260 /* NewTimeTable */,
 				5D4AA0F018E0826800474340 /* TImeTable */,
 				5D004EF718DC993100C109F6 /* WebVC */,
 				5D004EED18DB371100C109F6 /* More Detail */,
@@ -233,9 +223,8 @@
 				5D4F833D18D0ED1F00903ED0 /* Subject */,
 				5D4F830718D0BAD200903ED0 /* AppDelegate.h */,
 				5D4F830818D0BAD200903ED0 /* AppDelegate.m */,
-				5D4F830A18D0BAD200903ED0 /* Main_iPhone.storyboard */,
-				5D4F830D18D0BAD200903ED0 /* Main_iPad.storyboard */,
 				5D4F831318D0BAD200903ED0 /* Images.xcassets */,
+				9B38784E19A7E4BC00DA14FF /* UWCourse_iPhone.storyboard */,
 				5D4F82FF18D0BAD200903ED0 /* Supporting Files */,
 			);
 			path = UWCourse;
@@ -346,6 +335,26 @@
 			name = Master;
 			sourceTree = "<group>";
 		};
+		9B73302719A6C12B001D2260 /* NewTimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				9B38785019A7E54300DA14FF /* TimeTableVC.h */,
+				9B38785119A7E54300DA14FF /* TimeTableVC.m */,
+				9B38785419A91AB700DA14FF /* EventVCViewController.h */,
+				9B38785519A91AB700DA14FF /* EventVCViewController.m */,
+			);
+			name = NewTimeTable;
+			sourceTree = "<group>";
+		};
+		9B77EFA519A9402200981975 /* StatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				9B77EFA619A9403200981975 /* CWStatusBarNotification.h */,
+				9B77EFA719A9403200981975 /* CWStatusBarNotification.m */,
+			);
+			name = StatusBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -425,9 +434,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D4F830F18D0BAD200903ED0 /* Main_iPad.storyboard in Resources */,
+				9B38785319A7E6C300DA14FF /* UWCourse_iPhone.storyboard in Resources */,
 				5D4F831418D0BAD200903ED0 /* Images.xcassets in Resources */,
-				5D4F830C18D0BAD200903ED0 /* Main_iPhone.storyboard in Resources */,
 				5D4F830318D0BAD200903ED0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B38784F19A7E4BC00DA14FF /* UWCourse_iPhone.storyboard in Resources */,
 				5D4F832518D0BAD300903ED0 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,18 +465,17 @@
 				5D4F834118D2066E00903ED0 /* CourseTVC.m in Sources */,
 				5D4F835918D635C000903ED0 /* SubRecentTVC.m in Sources */,
 				5D4AA10518E14BFE00474340 /* CustomVC.m in Sources */,
-				5D4AA0F818E0828D00474340 /* ViewController.m in Sources */,
 				5DCA012618F07D7500BC1486 /* Reachability.m in Sources */,
 				5D4F833918D0EC7700903ED0 /* SubjectTVC.m in Sources */,
-				5D4AA0F718E0828D00474340 /* TableView.m in Sources */,
-				5D4AA0F918E0828D00474340 /* EventView.m in Sources */,
 				5D004EF618DC992A00C109F6 /* WebVC.m in Sources */,
-				5DCA012018EA4C8E00BC1486 /* CWStatusBarNotification.m in Sources */,
 				5D004EF018DB39FF00C109F6 /* MoreDetailTVC.m in Sources */,
 				5D4F833C18D0ECFA00903ED0 /* SubSubjectTVC.m in Sources */,
 				5D004EF318DB4B0200C109F6 /* DetailCustomCell.m in Sources */,
 				5D4AA10818E348AC00474340 /* SubjectScheduleTVC.m in Sources */,
+				9B38785219A7E54300DA14FF /* TimeTableVC.m in Sources */,
 				5D4F830918D0BAD200903ED0 /* AppDelegate.m in Sources */,
+				9B38785619A91AB700DA14FF /* EventVCViewController.m in Sources */,
+				9B77EFA819A9403200981975 /* CWStatusBarNotification.m in Sources */,
 				5D4F830518D0BAD200903ED0 /* main.m in Sources */,
 				5D4F835618D635A000903ED0 /* RecentTVC.m in Sources */,
 				5D4F834F18D4C39700903ED0 /* CustomCell.m in Sources */,
@@ -499,22 +507,6 @@
 				5D4F830218D0BAD200903ED0 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5D4F830A18D0BAD200903ED0 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D4F830B18D0BAD200903ED0 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		5D4F830D18D0BAD200903ED0 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D4F830E18D0BAD200903ED0 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		5D4F832318D0BAD300903ED0 /* InfoPlist.strings */ = {
@@ -610,6 +602,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UWCourse/UWCourse-Prefix.pch";
 				INFOPLIST_FILE = "UWCourse/UWCourse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -626,6 +619,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UWCourse/UWCourse-Prefix.pch";
 				INFOPLIST_FILE = "UWCourse/UWCourse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

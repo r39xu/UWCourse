@@ -7,10 +7,10 @@
 //
 
 #import "CustomVC.h"
-#import "MarkTableViewCell.h"
 #import "CustomCell.h"
-#import "CWStatusBarNotification.h"
+#import "MarkTableViewCell.h"
 #import "MoreDetailTVC.h"
+#import "CWStatusBarNotification.h"
 
 @interface CustomVC ()
 
@@ -20,6 +20,7 @@
 @property (nonatomic) BOOL isTUT;
 @property (nonatomic) BOOL isTST;
 @property (nonatomic,strong) CWStatusBarNotification *notification;
+
 @end
 
 @implementation CustomVC
@@ -295,32 +296,7 @@
         }
         [addingArray addObject:clecture];
     }
-    
-    for (NSDictionary *clecture in addingArray){
-        if (![bookmark objectForKey:@"Event List"]){
-            NSMutableArray *markArray = [[NSMutableArray alloc] initWithObjects:clecture, nil];
-            [bookmark setObject:markArray forKey:@"Event List"];
-            [bookmark synchronize];
-        } else {
-            NSMutableArray *markArray = [[NSMutableArray alloc] initWithArray:[bookmark objectForKey:@"Event List"]];
-            
-            BOOL isExist = NO;
-            for (NSDictionary *course in markArray){
-                if ([course isEqualToDictionary:clecture]){
-                    isExist = YES;
-                }
-            }
-            if (!isExist){
-                [markArray addObject:clecture];
-                [bookmark setObject:markArray forKey:@"Event List"];
-                [bookmark synchronize];
-            }
-        }
-    }
-    self.notification = [CWStatusBarNotification new];
-    self.notification.notificationLabelBackgroundColor  = self.segControl.tintColor;
-    self.notification.notificationLabelTextColor = [UIColor whiteColor];
-    [self.notification displayNotificationWithMessage:[NSString stringWithFormat:@"%@%@ has been added",self.courseName,self.courseNum] forDuration:1.0];
+    [self addCourse];
     //self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:2];
 }
 
@@ -511,6 +487,110 @@
 - (BOOL)shouldAutorotate
 {
     return NO;
+}
+
+
+
+- (void)addCourse
+{
+    int lecIndex = [self.picker selectedRowInComponent:0];
+    int tutIndex = [self.picker selectedRowInComponent:1];
+    int tstIndex = [self.picker selectedRowInComponent:2];
+    
+    NSDictionary *lecture;
+    NSDictionary *tutorial;
+    NSDictionary *test;
+    
+    if (lecArray.count > 0) {
+        lecture = lecArray[lecIndex];
+    } else {
+        return;  // Potential bug: assume must have at least one lecture
+    }
+    if (tutArray.count > 0) {
+        tutorial = tutArray[tutIndex];
+    }
+    if (tstArray.count > 0) {
+        test = tstArray[tstIndex];
+    }
+    
+    // a newCourse to be added to database
+    NSMutableDictionary *newCourseDic = [[NSMutableDictionary alloc] init];
+    
+    // *** LEC ***
+    NSMutableArray *lecArray = [[NSMutableArray alloc] init];
+    NSArray *classArray = lecture[@"classes"];
+    for (int i = 0; i < classArray.count; ++i) {
+        NSMutableDictionary *lecDic = [[NSMutableDictionary alloc] init];
+        
+        // section, course name & location
+        [lecDic setValue:lecture[@"section"] forKey:@"section"];
+        [lecDic setValue:self.courseName forKey:@"coursename"];
+        [lecDic setValue:self.courseNum forKey:@"coursenum"];
+        NSDictionary *locationDic = lecture[@"classes"][i][@"location"];
+        NSString *location = [NSString stringWithFormat:@"%@ %@", locationDic[@"building"], locationDic[@"room"]];
+        [lecDic setValue:location forKey:@"location"];
+        
+        // instructor
+        NSArray *instructorArray = lecture[@"classes"][0][@"instructors"];
+        if ([instructorArray isEqualToArray:@[]]){
+            [lecDic setValue:@"No Instructors Found" forKey:@"instructor"];
+        } else {
+            [lecDic setValue:instructorArray[0] forKey:@"instructor"];
+        }
+        
+        // date & time
+        NSDictionary *date = lecture[@"classes"][i][@"date"];
+        [lecDic setValue:date[@"weekdays"] forKey:@"weekdays"];
+        [lecDic setValue:date[@"start_time"] forKey:@"start_time"];
+        [lecDic setValue:date[@"end_time"] forKey:@"end_time"];
+        
+        [lecArray addObject:lecDic];
+    }
+    [newCourseDic setValue:lecArray forKey:@"lecture"];
+    
+    // *** TUT ***
+    if (tutorial) {
+        NSMutableDictionary *tutDic = [[NSMutableDictionary alloc] init];
+        NSDictionary *date = tutorial[@"classes"][0][@"date"];
+        [tutDic setValue:date[@"weekdays"] forKey:@"weekdays"];
+        [tutDic setValue:date[@"start_time"] forKey:@"start_time"];
+        [tutDic setValue:date[@"end_time"] forKey:@"end_time"];
+        [tutDic setValue:tutorial[@"section"] forKey:@"section"];
+        NSDictionary *locationDic = tutorial[@"classes"][0][@"location"];
+        NSString *location = [NSString stringWithFormat:@"%@ %@", locationDic[@"building"], locationDic[@"room"]];
+        [tutDic setValue:location forKey:@"location"];
+        [newCourseDic setValue:tutDic forKey:@"tutorial"];
+    }
+    
+    // *** TST ***
+    if (test) {
+        NSMutableDictionary *tstDic = [[NSMutableDictionary alloc] init];
+        NSDictionary *date = test[@"classes"][0][@"date"];
+        [tstDic setValue:date[@"weekdays"] forKey:@"weekdays"];
+        [tstDic setValue:date[@"start_time"] forKey:@"start_time"];
+        [tstDic setValue:date[@"end_time"] forKey:@"end_time"];
+        [newCourseDic setValue:tstDic forKey:@"test"];
+    }
+    
+    // add newCourse to bookmark(database)
+    NSUserDefaults *bookmark = [NSUserDefaults standardUserDefaults];
+    if (![bookmark objectForKey:@"Event List"]){
+        NSMutableArray *markArray = [[NSMutableArray alloc] initWithObjects:newCourseDic, nil];
+        [bookmark setObject:markArray forKey:@"Event List"];
+        [bookmark synchronize];
+    } else {
+        NSMutableArray *markArray = [[NSMutableArray alloc] initWithArray:[bookmark objectForKey:@"Event List"]];
+        [markArray addObject:newCourseDic];
+        [bookmark setObject:markArray forKey:@"Event List"];
+        [bookmark synchronize];
+    }
+    
+     //status bar notification
+    self.notification = [CWStatusBarNotification new];
+    self.notification.notificationLabelBackgroundColor  = self.view.tintColor;
+    self.notification.notificationLabelTextColor = [UIColor whiteColor];
+    [self.notification displayNotificationWithMessage:[NSString stringWithFormat:@"%@%@ has been added",self.courseName,self.courseNum] forDuration:1.0];
+    
 }
 
 /*

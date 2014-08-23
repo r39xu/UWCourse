@@ -71,7 +71,7 @@
     // Configure the cell...
     NSDictionary *mark = self.markArray[indexPath.row];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@-%@",mark[@"coursename"],mark[@"coursenum"],mark[@"section"]];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@-%@",mark[@"lecture"][0][@"coursename"],mark[@"lecture"][0][@"coursenum"],mark[@"lecture"][0][@"section"]];
     if ([mark objectForKey:@"tutorial"]){
         cell.detailTextLabel.text = [NSString stringWithFormat:@"with %@",[mark objectForKey:@"tutorial"][@"section"]];
     } else {
@@ -178,7 +178,6 @@
             [tstArray addObject:dic];
         }
     }
-    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -190,14 +189,14 @@
     // Pass the selected object to the new view controller.
     if ([segue.destinationViewController isKindOfClass:[CustomVC class]]){
         CustomVC *dvc = segue.destinationViewController;
-        dvc.courseName = course[@"coursename"];
-        dvc.courseNum = course[@"coursenum"];
+        dvc.courseName = course[@"lecture"][0][@"coursename"];
+        dvc.courseNum = course[@"lecture"][0][@"coursenum"];
         
         NSMutableArray *lecArray = [[NSMutableArray alloc]initWithArray:@[]];
         NSMutableArray *tutArray = [[NSMutableArray alloc]initWithArray:@[]];
         NSMutableArray *tstArray = [[NSMutableArray alloc]initWithArray:@[]];
         
-        [self fetchDetail:course[@"coursename"] courseNum:course[@"coursenum"] lecArray:lecArray tutArray:tutArray tstArray:tstArray];
+        [self fetchDetail:course[@"lecture"][0][@"coursename"] courseNum:course[@"lecture"][0][@"coursenum"] lecArray:lecArray tutArray:tutArray tstArray:tstArray];
         dvc.tutorialArray = tutArray;
         dvc.lectureArray = lecArray;
         dvc.testArray = tstArray;

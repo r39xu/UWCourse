@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="VNr-uC-dfb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="VNr-uC-dfb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -410,40 +410,6 @@
             </objects>
             <point key="canvasLocation" x="2372" y="1338"/>
         </scene>
-        <!--View Controller - Course Table-->
-        <scene sceneID="zel-co-o0x">
-            <objects>
-                <viewController id="rgq-Gk-fYM" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zhf-vF-HX7"/>
-                        <viewControllerLayoutGuide type="bottom" id="cfU-QT-GJW"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aFt-6O-9Dk">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFs-JV-uY7">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="aFs-JV-uY7" secondAttribute="bottom" id="2ri-y9-Pu3"/>
-                            <constraint firstItem="aFs-JV-uY7" firstAttribute="leading" secondItem="aFt-6O-9Dk" secondAttribute="leading" id="Tsa-Td-DIX"/>
-                            <constraint firstAttribute="trailing" secondItem="aFs-JV-uY7" secondAttribute="trailing" id="efB-Ah-gS1"/>
-                            <constraint firstItem="aFs-JV-uY7" firstAttribute="top" secondItem="aFt-6O-9Dk" secondAttribute="top" id="fN8-Xh-pVa"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Course Table" id="1Sl-N9-RKo"/>
-                    <connections>
-                        <outlet property="scrollView" destination="aFs-JV-uY7" id="UHL-PV-cpR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mNR-f2-Yqe" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2865" y="2183"/>
-        </scene>
         <!--Navigation Controller - Course Table-->
         <scene sceneID="Z9T-WC-l5x">
             <objects>
@@ -456,12 +422,31 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="rgq-Gk-fYM" kind="relationship" relationship="rootViewController" id="DyH-qo-UgP"/>
+                        <segue destination="8ZU-Xc-grM" kind="relationship" relationship="rootViewController" id="CUc-uE-X18"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55Y-o7-nbY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2372" y="2183"/>
+        </scene>
+        <!--Time TableVC - Course Table-->
+        <scene sceneID="OSc-sC-n8x">
+            <objects>
+                <viewController id="8ZU-Xc-grM" customClass="TimeTableVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IaJ-i2-qqi"/>
+                        <viewControllerLayoutGuide type="bottom" id="EW9-CC-0vh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ym-ec-Gu4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Course Table" id="1SM-ED-HRV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KqO-fw-aLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2892" y="2186"/>
         </scene>
         <!--CustomVC-->
         <scene sceneID="bbD-hx-LVZ">
