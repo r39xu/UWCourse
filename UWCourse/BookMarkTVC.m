@@ -108,8 +108,8 @@
         
         NSMutableArray *frameList = [[bookmark objectForKey:@"Frame List"]mutableCopy];
         for (NSDictionary *frameDic in frameList){
-            if ([frameDic[@"coursename"] isEqualToString:object[@"coursename"]]){
-                if ([frameDic[@"coursenum"] isEqualToString:object[@"coursenum"]]){
+            if ([frameDic[@"coursename"] isEqualToString:object[@"lecture"][0][@"coursename"]]){
+                if ([frameDic[@"coursenum"] isEqualToString:object[@"lecture"][0][@"coursenum"]]){
                     [frameList removeObject:frameDic];
                     break;
                 }
@@ -138,6 +138,7 @@
         return UITableViewCellEditingStyleNone;
     }
 }
+
 - (void)tableView:(UITableView *)tableView didEndEditingRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView reloadData];
 }

@@ -77,7 +77,7 @@
         [newdic setObject:array forKey:@"classes"];
         [lecArray replaceObjectAtIndex:[fakeLecArray indexOfObject:dic] withObject:newdic];
     }
-    NSLog(@"%@",lecArray[0][@"classes"]);
+    
     tstArray = [[NSMutableArray alloc]initWithArray:self.testArray];
     tutArray = [[NSMutableArray alloc] initWithArray:self.tutorialArray];
     self.title = [NSString stringWithFormat:@"%@ %@",self.courseName,self.courseNum];
