@@ -11,6 +11,7 @@
 #import "MarkTableViewCell.h"
 #import "MoreDetailTVC.h"
 #import "CWStatusBarNotification.h"
+#import "scheduleFetcher.h"
 
 @interface CustomVC ()
 
@@ -297,6 +298,8 @@
         [addingArray addObject:clecture];
     }
     [self addCourse];
+    scheduleFetcher *sf = [scheduleFetcher new];
+    [sf scheduleFetch:[NSString stringWithFormat:@"%@/%@",self.courseName,self.courseNum]];
     //self.tabBarController.selectedViewController= [self.tabBarController.viewControllers objectAtIndex:2];
 }
 

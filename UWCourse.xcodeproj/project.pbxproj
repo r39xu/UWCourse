@@ -102,6 +102,7 @@
 		9BF31C4D19AA797D00A9C960 /* UWaterlooDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C4A19AA797D00A9C960 /* UWaterlooDetailViewController.m */; };
 		9BF31C4E19AA797D00A9C960 /* UWaterlooMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C4C19AA797D00A9C960 /* UWaterlooMasterViewController.m */; };
 		9BF31CB319AABFA100A9C960 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF31CB219AABFA100A9C960 /* CoreData.framework */; };
+		F5A9201619AAC779006918C6 /* scheduleFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A9201519AAC779006918C6 /* scheduleFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -274,6 +275,8 @@
 		9BF31C4B19AA797D00A9C960 /* UWaterlooMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWaterlooMasterViewController.h; sourceTree = "<group>"; };
 		9BF31C4C19AA797D00A9C960 /* UWaterlooMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWaterlooMasterViewController.m; sourceTree = "<group>"; };
 		9BF31CB219AABFA100A9C960 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F5A9201419AAC779006918C6 /* scheduleFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduleFetcher.h; sourceTree = "<group>"; };
+		F5A9201519AAC779006918C6 /* scheduleFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scheduleFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -625,6 +628,8 @@
 				9BF31BF519AA6C7F00A9C960 /* wood.jpg */,
 				9BF31BF619AA6C7F00A9C960 /* wood2.jpg */,
 				9BF31BF719AA6C7F00A9C960 /* wood2.png */,
+				F5A9201419AAC779006918C6 /* scheduleFetcher.h */,
+				F5A9201519AAC779006918C6 /* scheduleFetcher.m */,
 			);
 			path = UWaterloo;
 			sourceTree = "<group>";
@@ -865,6 +870,7 @@
 				9BF31B7D19AA6B8A00A9C960 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				9B77EFA819A9403200981975 /* CWStatusBarNotification.m in Sources */,
 				9BF31C3F19AA6CEB00A9C960 /* JSONModelClassProperty.m in Sources */,
+				F5A9201619AAC779006918C6 /* scheduleFetcher.m in Sources */,
 				5D4F830518D0BAD200903ED0 /* main.m in Sources */,
 				9BF31C3D19AA6CEB00A9C960 /* JSONModel.m in Sources */,
 				9BF31BFB19AA6C7F00A9C960 /* classesModel.m in Sources */,
