@@ -25,7 +25,7 @@
 @implementation SubjectTVC
 - (IBAction)Close:(id)sender {
     
-    self.actionsheet = [[UIActionSheet alloc]initWithTitle:@"Term List" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Spring2014" otherButtonTitles:@"Winter 2014", nil];
+    self.actionsheet = [[UIActionSheet alloc]initWithTitle:@"Term List" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Fall2014" otherButtonTitles:@"Spring 2014", nil];
     
     [self.actionsheet showInView:self.tableView];
 }

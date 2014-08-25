@@ -43,6 +43,65 @@
 		9B38785319A7E6C300DA14FF /* UWCourse_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B38784E19A7E4BC00DA14FF /* UWCourse_iPhone.storyboard */; };
 		9B38785619A91AB700DA14FF /* EventVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B38785519A91AB700DA14FF /* EventVCViewController.m */; };
 		9B77EFA819A9403200981975 /* CWStatusBarNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B77EFA719A9403200981975 /* CWStatusBarNotification.m */; };
+		9BF31B7919AA6B8A00A9C960 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31B6E19AA6B8A00A9C960 /* NSMutableArray+SWUtilityButtons.m */; };
+		9BF31B7A19AA6B8A00A9C960 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31B7019AA6B8A00A9C960 /* SWCellScrollView.m */; };
+		9BF31B7B19AA6B8A00A9C960 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31B7219AA6B8A00A9C960 /* SWLongPressGestureRecognizer.m */; };
+		9BF31B7C19AA6B8A00A9C960 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31B7419AA6B8A00A9C960 /* SWTableViewCell.m */; };
+		9BF31B7D19AA6B8A00A9C960 /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31B7619AA6B8A00A9C960 /* SWUtilityButtonTapGestureRecognizer.m */; };
+		9BF31B7E19AA6B8A00A9C960 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31B7819AA6B8A00A9C960 /* SWUtilityButtonView.m */; };
+		9BF31B8619AA6BAF00A9C960 /* LeafNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31B8119AA6BAF00A9C960 /* LeafNotification.m */; };
+		9BF31B8719AA6BAF00A9C960 /* notification_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31B8219AA6BAF00A9C960 /* notification_success.png */; };
+		9BF31B8819AA6BAF00A9C960 /* notification_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31B8319AA6BAF00A9C960 /* notification_success@2x.png */; };
+		9BF31B8919AA6BAF00A9C960 /* notification_warring.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31B8419AA6BAF00A9C960 /* notification_warring.png */; };
+		9BF31B8A19AA6BAF00A9C960 /* notification_warring@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31B8519AA6BAF00A9C960 /* notification_warring@2x.png */; };
+		9BF31B9219AA6BC500A9C960 /* btnCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31B8C19AA6BC500A9C960 /* btnCheck.png */; };
+		9BF31B9319AA6BC500A9C960 /* btnCheck@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31B8D19AA6BC500A9C960 /* btnCheck@2x.png */; };
+		9BF31B9419AA6BC500A9C960 /* HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31B8F19AA6BC500A9C960 /* HUD.m */; };
+		9BF31B9519AA6BC500A9C960 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31B9119AA6BC500A9C960 /* MBProgressHUD.m */; };
+		9BF31BF819AA6C7F00A9C960 /* addScheduleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BB819AA6C7F00A9C960 /* addScheduleDetailViewController.m */; };
+		9BF31BFA19AA6C7F00A9C960 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BBB19AA6C7F00A9C960 /* calendar.png */; };
+		9BF31BFB19AA6C7F00A9C960 /* classesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BBD19AA6C7F00A9C960 /* classesModel.m */; };
+		9BF31BFC19AA6C7F00A9C960 /* CourseFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BBF19AA6C7F00A9C960 /* CourseFeed.m */; };
+		9BF31BFE19AA6C7F00A9C960 /* courseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BC319AA6C7F00A9C960 /* courseModel.m */; };
+		9BF31BFF19AA6C7F00A9C960 /* CourseScheduleFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BC519AA6C7F00A9C960 /* CourseScheduleFeed.m */; };
+		9BF31C0019AA6C7F00A9C960 /* CourseScheduleFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BC719AA6C7F00A9C960 /* CourseScheduleFetcher.m */; };
+		9BF31C0119AA6C7F00A9C960 /* CourseScheduleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BC919AA6C7F00A9C960 /* CourseScheduleModel.m */; };
+		9BF31C0219AA6C7F00A9C960 /* dateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BCB19AA6C7F00A9C960 /* dateModel.m */; };
+		9BF31C0319AA6C7F00A9C960 /* edit-notes.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BCC19AA6C7F00A9C960 /* edit-notes.png */; };
+		9BF31C0419AA6C7F00A9C960 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BCD19AA6C7F00A9C960 /* InfoPlist.strings */; };
+		9BF31C0519AA6C7F00A9C960 /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BD019AA6C7F00A9C960 /* EventManager.m */; };
+		9BF31C0619AA6C7F00A9C960 /* finalScheduleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BD219AA6C7F00A9C960 /* finalScheduleData.m */; };
+		9BF31C0719AA6C7F00A9C960 /* finalScheduleFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BD419AA6C7F00A9C960 /* finalScheduleFeed.m */; };
+		9BF31C0819AA6C7F00A9C960 /* finalScheduleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BD619AA6C7F00A9C960 /* finalScheduleModel.m */; };
+		9BF31C0919AA6C7F00A9C960 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BD719AA6C7F00A9C960 /* Images.xcassets */; };
+		9BF31C0F19AA6C7F00A9C960 /* locationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BE019AA6C7F00A9C960 /* locationModel.m */; };
+		9BF31C1119AA6C7F00A9C960 /* MiLLAooLT.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BE219AA6C7F00A9C960 /* MiLLAooLT.png */; };
+		9BF31C1219AA6C7F00A9C960 /* paper_clip_note.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BE319AA6C7F00A9C960 /* paper_clip_note.png */; };
+		9BF31C1319AA6C7F00A9C960 /* papercliptradingup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BE419AA6C7F00A9C960 /* papercliptradingup.jpg */; };
+		9BF31C1419AA6C7F00A9C960 /* ScheduleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BE519AA6C7F00A9C960 /* ScheduleTableCell.xib */; };
+		9BF31C1519AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BE719AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.m */; };
+		9BF31C1619AA6C7F00A9C960 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BE919AA6C7F00A9C960 /* ScheduleTableViewController.m */; };
+		9BF31C1719AA6C7F00A9C960 /* UWaterloo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BEA19AA6C7F00A9C960 /* UWaterloo-Info.plist */; };
+		9BF31C1819AA6C7F00A9C960 /* UWaterloo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BEC19AA6C7F00A9C960 /* UWaterloo.xcdatamodeld */; };
+		9BF31C1C19AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BF419AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg */; };
+		9BF31C1D19AA6C7F00A9C960 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BF519AA6C7F00A9C960 /* wood.jpg */; };
+		9BF31C1E19AA6C7F00A9C960 /* wood2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BF619AA6C7F00A9C960 /* wood2.jpg */; };
+		9BF31C1F19AA6C7F00A9C960 /* wood2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BF719AA6C7F00A9C960 /* wood2.png */; };
+		9BF31C3C19AA6CEB00A9C960 /* JSONModel+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C2319AA6CEB00A9C960 /* JSONModel+CoreData.m */; };
+		9BF31C3D19AA6CEB00A9C960 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C2519AA6CEB00A9C960 /* JSONModel.m */; };
+		9BF31C3E19AA6CEB00A9C960 /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C2719AA6CEB00A9C960 /* JSONModelArray.m */; };
+		9BF31C3F19AA6CEB00A9C960 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C2919AA6CEB00A9C960 /* JSONModelClassProperty.m */; };
+		9BF31C4019AA6CEB00A9C960 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C2B19AA6CEB00A9C960 /* JSONModelError.m */; };
+		9BF31C4119AA6CEB00A9C960 /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C2E19AA6CEB00A9C960 /* NSArray+JSONModel.m */; };
+		9BF31C4219AA6CEB00A9C960 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C3219AA6CEB00A9C960 /* JSONAPI.m */; };
+		9BF31C4319AA6CEB00A9C960 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C3419AA6CEB00A9C960 /* JSONHTTPClient.m */; };
+		9BF31C4419AA6CEB00A9C960 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C3619AA6CEB00A9C960 /* JSONModel+networking.m */; };
+		9BF31C4519AA6CEB00A9C960 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C3919AA6CEB00A9C960 /* JSONKeyMapper.m */; };
+		9BF31C4619AA6CEB00A9C960 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C3B19AA6CEB00A9C960 /* JSONValueTransformer.m */; };
+		9BF31C4819AA6DAA00A9C960 /* UWaterloo.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C4719AA6DAA00A9C960 /* UWaterloo.xcdatamodel */; };
+		9BF31C4D19AA797D00A9C960 /* UWaterlooDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C4A19AA797D00A9C960 /* UWaterlooDetailViewController.m */; };
+		9BF31C4E19AA797D00A9C960 /* UWaterlooMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C4C19AA797D00A9C960 /* UWaterlooMasterViewController.m */; };
+		9BF31CB319AABFA100A9C960 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF31CB219AABFA100A9C960 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +176,104 @@
 		9B38785519A91AB700DA14FF /* EventVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventVCViewController.m; sourceTree = "<group>"; };
 		9B77EFA619A9403200981975 /* CWStatusBarNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWStatusBarNotification.h; sourceTree = "<group>"; };
 		9B77EFA719A9403200981975 /* CWStatusBarNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWStatusBarNotification.m; sourceTree = "<group>"; };
+		9BF31B6D19AA6B8A00A9C960 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
+		9BF31B6E19AA6B8A00A9C960 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
+		9BF31B6F19AA6B8A00A9C960 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
+		9BF31B7019AA6B8A00A9C960 /* SWCellScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellScrollView.m; sourceTree = "<group>"; };
+		9BF31B7119AA6B8A00A9C960 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		9BF31B7219AA6B8A00A9C960 /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		9BF31B7319AA6B8A00A9C960 /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
+		9BF31B7419AA6B8A00A9C960 /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
+		9BF31B7519AA6B8A00A9C960 /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
+		9BF31B7619AA6B8A00A9C960 /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
+		9BF31B7719AA6B8A00A9C960 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonView.h; sourceTree = "<group>"; };
+		9BF31B7819AA6B8A00A9C960 /* SWUtilityButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonView.m; sourceTree = "<group>"; };
+		9BF31B8019AA6BAF00A9C960 /* LeafNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeafNotification.h; sourceTree = "<group>"; };
+		9BF31B8119AA6BAF00A9C960 /* LeafNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeafNotification.m; sourceTree = "<group>"; };
+		9BF31B8219AA6BAF00A9C960 /* notification_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification_success.png; sourceTree = "<group>"; };
+		9BF31B8319AA6BAF00A9C960 /* notification_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notification_success@2x.png"; sourceTree = "<group>"; };
+		9BF31B8419AA6BAF00A9C960 /* notification_warring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification_warring.png; sourceTree = "<group>"; };
+		9BF31B8519AA6BAF00A9C960 /* notification_warring@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notification_warring@2x.png"; sourceTree = "<group>"; };
+		9BF31B8C19AA6BC500A9C960 /* btnCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnCheck.png; sourceTree = "<group>"; };
+		9BF31B8D19AA6BC500A9C960 /* btnCheck@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btnCheck@2x.png"; sourceTree = "<group>"; };
+		9BF31B8E19AA6BC500A9C960 /* HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUD.h; sourceTree = "<group>"; };
+		9BF31B8F19AA6BC500A9C960 /* HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUD.m; sourceTree = "<group>"; };
+		9BF31B9019AA6BC500A9C960 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		9BF31B9119AA6BC500A9C960 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9BF31BB719AA6C7F00A9C960 /* addScheduleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addScheduleDetailViewController.h; sourceTree = "<group>"; };
+		9BF31BB819AA6C7F00A9C960 /* addScheduleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addScheduleDetailViewController.m; sourceTree = "<group>"; };
+		9BF31BBB19AA6C7F00A9C960 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		9BF31BBC19AA6C7F00A9C960 /* classesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classesModel.h; sourceTree = "<group>"; };
+		9BF31BBD19AA6C7F00A9C960 /* classesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = classesModel.m; sourceTree = "<group>"; };
+		9BF31BBE19AA6C7F00A9C960 /* CourseFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseFeed.h; sourceTree = "<group>"; };
+		9BF31BBF19AA6C7F00A9C960 /* CourseFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseFeed.m; sourceTree = "<group>"; };
+		9BF31BC219AA6C7F00A9C960 /* courseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = courseModel.h; sourceTree = "<group>"; };
+		9BF31BC319AA6C7F00A9C960 /* courseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = courseModel.m; sourceTree = "<group>"; };
+		9BF31BC419AA6C7F00A9C960 /* CourseScheduleFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseScheduleFeed.h; sourceTree = "<group>"; };
+		9BF31BC519AA6C7F00A9C960 /* CourseScheduleFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseScheduleFeed.m; sourceTree = "<group>"; };
+		9BF31BC619AA6C7F00A9C960 /* CourseScheduleFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseScheduleFetcher.h; sourceTree = "<group>"; };
+		9BF31BC719AA6C7F00A9C960 /* CourseScheduleFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseScheduleFetcher.m; sourceTree = "<group>"; };
+		9BF31BC819AA6C7F00A9C960 /* CourseScheduleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseScheduleModel.h; sourceTree = "<group>"; };
+		9BF31BC919AA6C7F00A9C960 /* CourseScheduleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseScheduleModel.m; sourceTree = "<group>"; };
+		9BF31BCA19AA6C7F00A9C960 /* dateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dateModel.h; sourceTree = "<group>"; };
+		9BF31BCB19AA6C7F00A9C960 /* dateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dateModel.m; sourceTree = "<group>"; };
+		9BF31BCC19AA6C7F00A9C960 /* edit-notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-notes.png"; sourceTree = "<group>"; };
+		9BF31BCE19AA6C7F00A9C960 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9BF31BCF19AA6C7F00A9C960 /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
+		9BF31BD019AA6C7F00A9C960 /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
+		9BF31BD119AA6C7F00A9C960 /* finalScheduleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = finalScheduleData.h; sourceTree = "<group>"; };
+		9BF31BD219AA6C7F00A9C960 /* finalScheduleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = finalScheduleData.m; sourceTree = "<group>"; };
+		9BF31BD319AA6C7F00A9C960 /* finalScheduleFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = finalScheduleFeed.h; sourceTree = "<group>"; };
+		9BF31BD419AA6C7F00A9C960 /* finalScheduleFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = finalScheduleFeed.m; sourceTree = "<group>"; };
+		9BF31BD519AA6C7F00A9C960 /* finalScheduleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = finalScheduleModel.h; sourceTree = "<group>"; };
+		9BF31BD619AA6C7F00A9C960 /* finalScheduleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = finalScheduleModel.m; sourceTree = "<group>"; };
+		9BF31BD719AA6C7F00A9C960 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9BF31BDF19AA6C7F00A9C960 /* locationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locationModel.h; sourceTree = "<group>"; };
+		9BF31BE019AA6C7F00A9C960 /* locationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locationModel.m; sourceTree = "<group>"; };
+		9BF31BE219AA6C7F00A9C960 /* MiLLAooLT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MiLLAooLT.png; sourceTree = "<group>"; };
+		9BF31BE319AA6C7F00A9C960 /* paper_clip_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper_clip_note.png; sourceTree = "<group>"; };
+		9BF31BE419AA6C7F00A9C960 /* papercliptradingup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = papercliptradingup.jpg; sourceTree = "<group>"; };
+		9BF31BE519AA6C7F00A9C960 /* ScheduleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleTableCell.xib; sourceTree = "<group>"; };
+		9BF31BE619AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableCellTableViewCell.h; sourceTree = "<group>"; };
+		9BF31BE719AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableCellTableViewCell.m; sourceTree = "<group>"; };
+		9BF31BE819AA6C7F00A9C960 /* ScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewController.h; sourceTree = "<group>"; };
+		9BF31BE919AA6C7F00A9C960 /* ScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewController.m; sourceTree = "<group>"; };
+		9BF31BEA19AA6C7F00A9C960 /* UWaterloo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "UWaterloo-Info.plist"; sourceTree = "<group>"; };
+		9BF31BEB19AA6C7F00A9C960 /* UWaterloo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UWaterloo-Prefix.pch"; sourceTree = "<group>"; };
+		9BF31BED19AA6C7F00A9C960 /* UWaterloo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UWaterloo.xcdatamodel; sourceTree = "<group>"; };
+		9BF31BF419AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg"; sourceTree = "<group>"; };
+		9BF31BF519AA6C7F00A9C960 /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpg; sourceTree = "<group>"; };
+		9BF31BF619AA6C7F00A9C960 /* wood2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood2.jpg; sourceTree = "<group>"; };
+		9BF31BF719AA6C7F00A9C960 /* wood2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood2.png; sourceTree = "<group>"; };
+		9BF31C2219AA6CEB00A9C960 /* JSONModel+CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+CoreData.h"; sourceTree = "<group>"; };
+		9BF31C2319AA6CEB00A9C960 /* JSONModel+CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+CoreData.m"; sourceTree = "<group>"; };
+		9BF31C2419AA6CEB00A9C960 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		9BF31C2519AA6CEB00A9C960 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		9BF31C2619AA6CEB00A9C960 /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
+		9BF31C2719AA6CEB00A9C960 /* JSONModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelArray.m; sourceTree = "<group>"; };
+		9BF31C2819AA6CEB00A9C960 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		9BF31C2919AA6CEB00A9C960 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		9BF31C2A19AA6CEB00A9C960 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		9BF31C2B19AA6CEB00A9C960 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		9BF31C2D19AA6CEB00A9C960 /* NSArray+JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		9BF31C2E19AA6CEB00A9C960 /* NSArray+JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		9BF31C2F19AA6CEB00A9C960 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		9BF31C3119AA6CEB00A9C960 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		9BF31C3219AA6CEB00A9C960 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		9BF31C3319AA6CEB00A9C960 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		9BF31C3419AA6CEB00A9C960 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		9BF31C3519AA6CEB00A9C960 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		9BF31C3619AA6CEB00A9C960 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		9BF31C3819AA6CEB00A9C960 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		9BF31C3919AA6CEB00A9C960 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		9BF31C3A19AA6CEB00A9C960 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		9BF31C3B19AA6CEB00A9C960 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		9BF31C4719AA6DAA00A9C960 /* UWaterloo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UWaterloo.xcdatamodel; sourceTree = "<group>"; };
+		9BF31C4919AA797D00A9C960 /* UWaterlooDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWaterlooDetailViewController.h; sourceTree = "<group>"; };
+		9BF31C4A19AA797D00A9C960 /* UWaterlooDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWaterlooDetailViewController.m; sourceTree = "<group>"; };
+		9BF31C4B19AA797D00A9C960 /* UWaterlooMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWaterlooMasterViewController.h; sourceTree = "<group>"; };
+		9BF31C4C19AA797D00A9C960 /* UWaterlooMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWaterlooMasterViewController.m; sourceTree = "<group>"; };
+		9BF31CB219AABFA100A9C960 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +281,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF31CB319AABFA100A9C960 /* CoreData.framework in Frameworks */,
 				5D4AA10D18E4F42900474340 /* QuartzCore.framework in Frameworks */,
 				5D4F82FB18D0BAD200903ED0 /* CoreGraphics.framework in Frameworks */,
 				5D4F82FD18D0BAD200903ED0 /* UIKit.framework in Frameworks */,
@@ -197,6 +355,7 @@
 		5D4F82F718D0BAD200903ED0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9BF31CB219AABFA100A9C960 /* CoreData.framework */,
 				5D4AA10C18E4F42900474340 /* QuartzCore.framework */,
 				5D4F82F818D0BAD200903ED0 /* Foundation.framework */,
 				5D4F82FA18D0BAD200903ED0 /* CoreGraphics.framework */,
@@ -209,6 +368,7 @@
 		5D4F82FE18D0BAD200903ED0 /* UWCourse */ = {
 			isa = PBXGroup;
 			children = (
+				9BF31B6B19AA6B2C00A9C960 /* CountDown */,
 				9B77EFA519A9402200981975 /* StatusBar */,
 				9B73302719A6C12B001D2260 /* NewTimeTable */,
 				5D4AA0F018E0826800474340 /* TImeTable */,
@@ -233,6 +393,7 @@
 		5D4F82FF18D0BAD200903ED0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9BF31C4719AA6DAA00A9C960 /* UWaterloo.xcdatamodel */,
 				5D4F830018D0BAD200903ED0 /* UWCourse-Info.plist */,
 				5D4F830118D0BAD200903ED0 /* InfoPlist.strings */,
 				5D4F830418D0BAD200903ED0 /* main.m */,
@@ -355,6 +516,181 @@
 			name = StatusBar;
 			sourceTree = "<group>";
 		};
+		9BF31B6B19AA6B2C00A9C960 /* CountDown */ = {
+			isa = PBXGroup;
+			children = (
+				9BF31C2019AA6CEB00A9C960 /* JSONModel */,
+				9BF31BB619AA6C7F00A9C960 /* UWaterloo */,
+				9BF31B8B19AA6BB400A9C960 /* HUD */,
+				9BF31B7F19AA6B9800A9C960 /* LeafNotificationView */,
+				9BF31B6C19AA6B6400A9C960 /* SWTableCell */,
+			);
+			name = CountDown;
+			sourceTree = "<group>";
+		};
+		9BF31B6C19AA6B6400A9C960 /* SWTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				9BF31B6D19AA6B8A00A9C960 /* NSMutableArray+SWUtilityButtons.h */,
+				9BF31B6E19AA6B8A00A9C960 /* NSMutableArray+SWUtilityButtons.m */,
+				9BF31B6F19AA6B8A00A9C960 /* SWCellScrollView.h */,
+				9BF31B7019AA6B8A00A9C960 /* SWCellScrollView.m */,
+				9BF31B7119AA6B8A00A9C960 /* SWLongPressGestureRecognizer.h */,
+				9BF31B7219AA6B8A00A9C960 /* SWLongPressGestureRecognizer.m */,
+				9BF31B7319AA6B8A00A9C960 /* SWTableViewCell.h */,
+				9BF31B7419AA6B8A00A9C960 /* SWTableViewCell.m */,
+				9BF31B7519AA6B8A00A9C960 /* SWUtilityButtonTapGestureRecognizer.h */,
+				9BF31B7619AA6B8A00A9C960 /* SWUtilityButtonTapGestureRecognizer.m */,
+				9BF31B7719AA6B8A00A9C960 /* SWUtilityButtonView.h */,
+				9BF31B7819AA6B8A00A9C960 /* SWUtilityButtonView.m */,
+			);
+			name = SWTableCell;
+			sourceTree = "<group>";
+		};
+		9BF31B7F19AA6B9800A9C960 /* LeafNotificationView */ = {
+			isa = PBXGroup;
+			children = (
+				9BF31B8019AA6BAF00A9C960 /* LeafNotification.h */,
+				9BF31B8119AA6BAF00A9C960 /* LeafNotification.m */,
+				9BF31B8219AA6BAF00A9C960 /* notification_success.png */,
+				9BF31B8319AA6BAF00A9C960 /* notification_success@2x.png */,
+				9BF31B8419AA6BAF00A9C960 /* notification_warring.png */,
+				9BF31B8519AA6BAF00A9C960 /* notification_warring@2x.png */,
+			);
+			name = LeafNotificationView;
+			sourceTree = "<group>";
+		};
+		9BF31B8B19AA6BB400A9C960 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				9BF31B8C19AA6BC500A9C960 /* btnCheck.png */,
+				9BF31B8D19AA6BC500A9C960 /* btnCheck@2x.png */,
+				9BF31B8E19AA6BC500A9C960 /* HUD.h */,
+				9BF31B8F19AA6BC500A9C960 /* HUD.m */,
+				9BF31B9019AA6BC500A9C960 /* MBProgressHUD.h */,
+				9BF31B9119AA6BC500A9C960 /* MBProgressHUD.m */,
+			);
+			name = HUD;
+			sourceTree = "<group>";
+		};
+		9BF31BB619AA6C7F00A9C960 /* UWaterloo */ = {
+			isa = PBXGroup;
+			children = (
+				9BF31C4919AA797D00A9C960 /* UWaterlooDetailViewController.h */,
+				9BF31C4A19AA797D00A9C960 /* UWaterlooDetailViewController.m */,
+				9BF31C4B19AA797D00A9C960 /* UWaterlooMasterViewController.h */,
+				9BF31C4C19AA797D00A9C960 /* UWaterlooMasterViewController.m */,
+				9BF31BB719AA6C7F00A9C960 /* addScheduleDetailViewController.h */,
+				9BF31BB819AA6C7F00A9C960 /* addScheduleDetailViewController.m */,
+				9BF31BBB19AA6C7F00A9C960 /* calendar.png */,
+				9BF31BBC19AA6C7F00A9C960 /* classesModel.h */,
+				9BF31BBD19AA6C7F00A9C960 /* classesModel.m */,
+				9BF31BBE19AA6C7F00A9C960 /* CourseFeed.h */,
+				9BF31BBF19AA6C7F00A9C960 /* CourseFeed.m */,
+				9BF31BC219AA6C7F00A9C960 /* courseModel.h */,
+				9BF31BC319AA6C7F00A9C960 /* courseModel.m */,
+				9BF31BC419AA6C7F00A9C960 /* CourseScheduleFeed.h */,
+				9BF31BC519AA6C7F00A9C960 /* CourseScheduleFeed.m */,
+				9BF31BC619AA6C7F00A9C960 /* CourseScheduleFetcher.h */,
+				9BF31BC719AA6C7F00A9C960 /* CourseScheduleFetcher.m */,
+				9BF31BC819AA6C7F00A9C960 /* CourseScheduleModel.h */,
+				9BF31BC919AA6C7F00A9C960 /* CourseScheduleModel.m */,
+				9BF31BCA19AA6C7F00A9C960 /* dateModel.h */,
+				9BF31BCB19AA6C7F00A9C960 /* dateModel.m */,
+				9BF31BCC19AA6C7F00A9C960 /* edit-notes.png */,
+				9BF31BCD19AA6C7F00A9C960 /* InfoPlist.strings */,
+				9BF31BCF19AA6C7F00A9C960 /* EventManager.h */,
+				9BF31BD019AA6C7F00A9C960 /* EventManager.m */,
+				9BF31BD119AA6C7F00A9C960 /* finalScheduleData.h */,
+				9BF31BD219AA6C7F00A9C960 /* finalScheduleData.m */,
+				9BF31BD319AA6C7F00A9C960 /* finalScheduleFeed.h */,
+				9BF31BD419AA6C7F00A9C960 /* finalScheduleFeed.m */,
+				9BF31BD519AA6C7F00A9C960 /* finalScheduleModel.h */,
+				9BF31BD619AA6C7F00A9C960 /* finalScheduleModel.m */,
+				9BF31BD719AA6C7F00A9C960 /* Images.xcassets */,
+				9BF31BDF19AA6C7F00A9C960 /* locationModel.h */,
+				9BF31BE019AA6C7F00A9C960 /* locationModel.m */,
+				9BF31BE219AA6C7F00A9C960 /* MiLLAooLT.png */,
+				9BF31BE319AA6C7F00A9C960 /* paper_clip_note.png */,
+				9BF31BE419AA6C7F00A9C960 /* papercliptradingup.jpg */,
+				9BF31BE519AA6C7F00A9C960 /* ScheduleTableCell.xib */,
+				9BF31BE619AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.h */,
+				9BF31BE719AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.m */,
+				9BF31BE819AA6C7F00A9C960 /* ScheduleTableViewController.h */,
+				9BF31BE919AA6C7F00A9C960 /* ScheduleTableViewController.m */,
+				9BF31BEA19AA6C7F00A9C960 /* UWaterloo-Info.plist */,
+				9BF31BEB19AA6C7F00A9C960 /* UWaterloo-Prefix.pch */,
+				9BF31BEC19AA6C7F00A9C960 /* UWaterloo.xcdatamodeld */,
+				9BF31BF419AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg */,
+				9BF31BF519AA6C7F00A9C960 /* wood.jpg */,
+				9BF31BF619AA6C7F00A9C960 /* wood2.jpg */,
+				9BF31BF719AA6C7F00A9C960 /* wood2.png */,
+			);
+			path = UWaterloo;
+			sourceTree = "<group>";
+		};
+		9BF31C2019AA6CEB00A9C960 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				9BF31C2119AA6CEB00A9C960 /* JSONModel */,
+				9BF31C2C19AA6CEB00A9C960 /* JSONModelCategories */,
+				9BF31C2F19AA6CEB00A9C960 /* JSONModelLib.h */,
+				9BF31C3019AA6CEB00A9C960 /* JSONModelNetworking */,
+				9BF31C3719AA6CEB00A9C960 /* JSONModelTransformations */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		9BF31C2119AA6CEB00A9C960 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				9BF31C2219AA6CEB00A9C960 /* JSONModel+CoreData.h */,
+				9BF31C2319AA6CEB00A9C960 /* JSONModel+CoreData.m */,
+				9BF31C2419AA6CEB00A9C960 /* JSONModel.h */,
+				9BF31C2519AA6CEB00A9C960 /* JSONModel.m */,
+				9BF31C2619AA6CEB00A9C960 /* JSONModelArray.h */,
+				9BF31C2719AA6CEB00A9C960 /* JSONModelArray.m */,
+				9BF31C2819AA6CEB00A9C960 /* JSONModelClassProperty.h */,
+				9BF31C2919AA6CEB00A9C960 /* JSONModelClassProperty.m */,
+				9BF31C2A19AA6CEB00A9C960 /* JSONModelError.h */,
+				9BF31C2B19AA6CEB00A9C960 /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		9BF31C2C19AA6CEB00A9C960 /* JSONModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				9BF31C2D19AA6CEB00A9C960 /* NSArray+JSONModel.h */,
+				9BF31C2E19AA6CEB00A9C960 /* NSArray+JSONModel.m */,
+			);
+			path = JSONModelCategories;
+			sourceTree = "<group>";
+		};
+		9BF31C3019AA6CEB00A9C960 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				9BF31C3119AA6CEB00A9C960 /* JSONAPI.h */,
+				9BF31C3219AA6CEB00A9C960 /* JSONAPI.m */,
+				9BF31C3319AA6CEB00A9C960 /* JSONHTTPClient.h */,
+				9BF31C3419AA6CEB00A9C960 /* JSONHTTPClient.m */,
+				9BF31C3519AA6CEB00A9C960 /* JSONModel+networking.h */,
+				9BF31C3619AA6CEB00A9C960 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		9BF31C3719AA6CEB00A9C960 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				9BF31C3819AA6CEB00A9C960 /* JSONKeyMapper.h */,
+				9BF31C3919AA6CEB00A9C960 /* JSONKeyMapper.m */,
+				9BF31C3A19AA6CEB00A9C960 /* JSONValueTransformer.h */,
+				9BF31C3B19AA6CEB00A9C960 /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -434,9 +770,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF31B8819AA6BAF00A9C960 /* notification_success@2x.png in Resources */,
+				9BF31C1C19AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg in Resources */,
+				9BF31C1419AA6C7F00A9C960 /* ScheduleTableCell.xib in Resources */,
+				9BF31C0319AA6C7F00A9C960 /* edit-notes.png in Resources */,
+				9BF31C1F19AA6C7F00A9C960 /* wood2.png in Resources */,
+				9BF31C0419AA6C7F00A9C960 /* InfoPlist.strings in Resources */,
+				9BF31B9219AA6BC500A9C960 /* btnCheck.png in Resources */,
 				9B38785319A7E6C300DA14FF /* UWCourse_iPhone.storyboard in Resources */,
+				9BF31B9319AA6BC500A9C960 /* btnCheck@2x.png in Resources */,
+				9BF31C1D19AA6C7F00A9C960 /* wood.jpg in Resources */,
 				5D4F831418D0BAD200903ED0 /* Images.xcassets in Resources */,
+				9BF31C1119AA6C7F00A9C960 /* MiLLAooLT.png in Resources */,
+				9BF31B8919AA6BAF00A9C960 /* notification_warring.png in Resources */,
+				9BF31C0919AA6C7F00A9C960 /* Images.xcassets in Resources */,
+				9BF31C1219AA6C7F00A9C960 /* paper_clip_note.png in Resources */,
+				9BF31B8719AA6BAF00A9C960 /* notification_success.png in Resources */,
+				9BF31B8A19AA6BAF00A9C960 /* notification_warring@2x.png in Resources */,
+				9BF31C1719AA6C7F00A9C960 /* UWaterloo-Info.plist in Resources */,
+				9BF31C1319AA6C7F00A9C960 /* papercliptradingup.jpg in Resources */,
 				5D4F830318D0BAD200903ED0 /* InfoPlist.strings in Resources */,
+				9BF31BFA19AA6C7F00A9C960 /* calendar.png in Resources */,
+				9BF31C1E19AA6C7F00A9C960 /* wood2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,27 +813,66 @@
 			files = (
 				5D4F833318D0BEA800903ED0 /* CourseFetcher.m in Sources */,
 				5D4F834818D2288B00903ED0 /* DetailVC.m in Sources */,
+				9BF31C4D19AA797D00A9C960 /* UWaterlooDetailViewController.m in Sources */,
+				9BF31B7C19AA6B8A00A9C960 /* SWTableViewCell.m in Sources */,
+				9BF31B7919AA6B8A00A9C960 /* NSMutableArray+SWUtilityButtons.m in Sources */,
+				9BF31B7B19AA6B8A00A9C960 /* SWLongPressGestureRecognizer.m in Sources */,
 				5DD4206618D8D56B0020DC26 /* MasterVC.m in Sources */,
+				9BF31B9419AA6BC500A9C960 /* HUD.m in Sources */,
 				5D4F834518D206A100903ED0 /* SubCourseTVC.m in Sources */,
+				9BF31C4019AA6CEB00A9C960 /* JSONModelError.m in Sources */,
+				9BF31BFE19AA6C7F00A9C960 /* courseModel.m in Sources */,
+				9BF31B7E19AA6B8A00A9C960 /* SWUtilityButtonView.m in Sources */,
+				9BF31C4219AA6CEB00A9C960 /* JSONAPI.m in Sources */,
 				5D4F835D18D6493E00903ED0 /* BookMarkTVC.m in Sources */,
+				9BF31C4819AA6DAA00A9C960 /* UWaterloo.xcdatamodel in Sources */,
+				9BF31C0519AA6C7F00A9C960 /* EventManager.m in Sources */,
+				9BF31C4119AA6CEB00A9C960 /* NSArray+JSONModel.m in Sources */,
+				9BF31C4319AA6CEB00A9C960 /* JSONHTTPClient.m in Sources */,
+				9BF31C3C19AA6CEB00A9C960 /* JSONModel+CoreData.m in Sources */,
 				5D4F836018D6495100903ED0 /* SubBookMarkTVC.m in Sources */,
 				5D4F834118D2066E00903ED0 /* CourseTVC.m in Sources */,
+				9BF31BFF19AA6C7F00A9C960 /* CourseScheduleFeed.m in Sources */,
+				9BF31BFC19AA6C7F00A9C960 /* CourseFeed.m in Sources */,
+				9BF31C0819AA6C7F00A9C960 /* finalScheduleModel.m in Sources */,
 				5D4F835918D635C000903ED0 /* SubRecentTVC.m in Sources */,
+				9BF31C0019AA6C7F00A9C960 /* CourseScheduleFetcher.m in Sources */,
 				5D4AA10518E14BFE00474340 /* CustomVC.m in Sources */,
 				5DCA012618F07D7500BC1486 /* Reachability.m in Sources */,
+				9BF31C1519AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.m in Sources */,
+				9BF31C0719AA6C7F00A9C960 /* finalScheduleFeed.m in Sources */,
+				9BF31C0619AA6C7F00A9C960 /* finalScheduleData.m in Sources */,
+				9BF31B9519AA6BC500A9C960 /* MBProgressHUD.m in Sources */,
+				9BF31C4E19AA797D00A9C960 /* UWaterlooMasterViewController.m in Sources */,
+				9BF31C0119AA6C7F00A9C960 /* CourseScheduleModel.m in Sources */,
 				5D4F833918D0EC7700903ED0 /* SubjectTVC.m in Sources */,
 				5D004EF618DC992A00C109F6 /* WebVC.m in Sources */,
 				5D004EF018DB39FF00C109F6 /* MoreDetailTVC.m in Sources */,
+				9BF31C1819AA6C7F00A9C960 /* UWaterloo.xcdatamodeld in Sources */,
+				9BF31C4419AA6CEB00A9C960 /* JSONModel+networking.m in Sources */,
 				5D4F833C18D0ECFA00903ED0 /* SubSubjectTVC.m in Sources */,
 				5D004EF318DB4B0200C109F6 /* DetailCustomCell.m in Sources */,
+				9BF31C4619AA6CEB00A9C960 /* JSONValueTransformer.m in Sources */,
 				5D4AA10818E348AC00474340 /* SubjectScheduleTVC.m in Sources */,
+				9BF31C3E19AA6CEB00A9C960 /* JSONModelArray.m in Sources */,
 				9B38785219A7E54300DA14FF /* TimeTableVC.m in Sources */,
 				5D4F830918D0BAD200903ED0 /* AppDelegate.m in Sources */,
+				9BF31B8619AA6BAF00A9C960 /* LeafNotification.m in Sources */,
+				9BF31C0219AA6C7F00A9C960 /* dateModel.m in Sources */,
+				9BF31C4519AA6CEB00A9C960 /* JSONKeyMapper.m in Sources */,
 				9B38785619A91AB700DA14FF /* EventVCViewController.m in Sources */,
+				9BF31BF819AA6C7F00A9C960 /* addScheduleDetailViewController.m in Sources */,
+				9BF31B7D19AA6B8A00A9C960 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				9B77EFA819A9403200981975 /* CWStatusBarNotification.m in Sources */,
+				9BF31C3F19AA6CEB00A9C960 /* JSONModelClassProperty.m in Sources */,
 				5D4F830518D0BAD200903ED0 /* main.m in Sources */,
+				9BF31C3D19AA6CEB00A9C960 /* JSONModel.m in Sources */,
+				9BF31BFB19AA6C7F00A9C960 /* classesModel.m in Sources */,
+				9BF31B7A19AA6B8A00A9C960 /* SWCellScrollView.m in Sources */,
+				9BF31C1619AA6C7F00A9C960 /* ScheduleTableViewController.m in Sources */,
 				5D4F835618D635A000903ED0 /* RecentTVC.m in Sources */,
 				5D4F834F18D4C39700903ED0 /* CustomCell.m in Sources */,
+				9BF31C0F19AA6C7F00A9C960 /* locationModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +907,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				5D4F832418D0BAD300903ED0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9BF31BCD19AA6C7F00A9C960 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BF31BCE19AA6C7F00A9C960 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -697,6 +1099,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9BF31BEC19AA6C7F00A9C960 /* UWaterloo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9BF31BED19AA6C7F00A9C960 /* UWaterloo.xcdatamodel */,
+			);
+			currentVersion = 9BF31BED19AA6C7F00A9C960 /* UWaterloo.xcdatamodel */;
+			path = UWaterloo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5D4F82ED18D0BAD200903ED0 /* Project object */;
 }
