@@ -12,7 +12,7 @@
 #import "MoreDetailTVC.h"
 #import "CWStatusBarNotification.h"
 #import "scheduleFetcher.h"
-
+#import "LeafNotification.h"
 @interface CustomVC ()
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segControl;
@@ -589,10 +589,11 @@
     }
     
      //status bar notification
-    self.notification = [CWStatusBarNotification new];
+    /*self.notification = [CWStatusBarNotification new];
     self.notification.notificationLabelBackgroundColor  = self.view.tintColor;
     self.notification.notificationLabelTextColor = [UIColor whiteColor];
-    [self.notification displayNotificationWithMessage:[NSString stringWithFormat:@"%@%@ has been added",self.courseName,self.courseNum] forDuration:1.0];
+    [self.notification displayNotificationWithMessage:[NSString stringWithFormat:@"%@%@ has been added",self.courseName,self.courseNum] forDuration:1.0];*/
+    [LeafNotification showInController:self withText:@"Course Added!" type:LeafNotificationTypeSuccess];
     
 }
 

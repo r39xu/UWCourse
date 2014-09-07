@@ -176,7 +176,7 @@
      cell.countDown.text=[NSString stringWithFormat:@"%ld",(long)days];
      cell.courseName.text=[NSString stringWithFormat:@"%@ Final",[device valueForKey:@"catalog_number"]];*/
     //cell.Date.text=str;
-    cell.location.text=[NSString stringWithFormat:@"Location: %@",[device valueForKey:@"taskLocation"]];
+
     
     if (days==0){
         if ([breakdownInfo hour]==0){
@@ -214,11 +214,21 @@
     NSString *day=[device valueForKey:@"taskDay"];
     NSString *startTime= [dateFormat stringFromDate:[device valueForKey:@"taskFullDate"]];
     NSString *endTime= [dateFormat stringFromDate:[device valueForKey:@"taskFullEndDate"]];
+    NSString *notes=[device valueForKey:@"notes"];
+    NSString *location=[device valueForKey:@"taskLocation"];
+    
+    if (day==NULL) day=@"";
+    if (dateString==NULL) dateString=@"";
+    if (startTime==NULL) startTime=@"";
+    if (endTime==NULL) endTime=@"";
+    if (notes==NULL) notes=@"";
+    if (location==NULL) location=@"";
+    
     
     cell.courseName.text=[NSString stringWithFormat:@"%@",[device valueForKey:@"taskName"]];
-    cell.notes.text=[NSString stringWithFormat:@"Notes: %@",[device valueForKey:@"notes"]];
+    cell.notes.text=[NSString stringWithFormat:@"Notes: %@",notes];
     cell.Date.text=[NSString stringWithFormat:@"Date: %@  %@",dateString,day];
-    
+    cell.location.text=[NSString stringWithFormat:@"Location: %@",location];
     cell.time.text=[NSString stringWithFormat:@"Time: %@ - %@",startTime,endTime];
     if (([device valueForKey:@"taskFullDate"]!=NULL)&&([device valueForKey:@"taskFullEndDate"]!=NULL)){
         breakdownInfo = [sysCalendar components:unitFlags fromDate:[device valueForKey:@"taskFullDate"]  toDate:[device     valueForKey:@"taskFullEndDate"]  options:0];
@@ -370,7 +380,8 @@
     if ([[segue identifier] isEqualToString:@"edit"]) {
         NSManagedObject *selectedEvent = [self.courses objectAtIndex:[self.selectedRow row]];
         
-        addScheduleDetailViewController *destViewController = segue.destinationViewController;
+        //addScheduleDetailViewController *destViewController = segue.destinationViewController;
+        addScheduleDetailViewController *destViewController=[[[segue destinationViewController] viewControllers] objectAtIndex:0];
         destViewController.event = selectedEvent;
     }
 }

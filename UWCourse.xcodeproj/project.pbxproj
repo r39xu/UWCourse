@@ -67,7 +67,6 @@
 		9BF31C0019AA6C7F00A9C960 /* CourseScheduleFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BC719AA6C7F00A9C960 /* CourseScheduleFetcher.m */; };
 		9BF31C0119AA6C7F00A9C960 /* CourseScheduleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BC919AA6C7F00A9C960 /* CourseScheduleModel.m */; };
 		9BF31C0219AA6C7F00A9C960 /* dateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BCB19AA6C7F00A9C960 /* dateModel.m */; };
-		9BF31C0319AA6C7F00A9C960 /* edit-notes.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BCC19AA6C7F00A9C960 /* edit-notes.png */; };
 		9BF31C0419AA6C7F00A9C960 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BCD19AA6C7F00A9C960 /* InfoPlist.strings */; };
 		9BF31C0519AA6C7F00A9C960 /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BD019AA6C7F00A9C960 /* EventManager.m */; };
 		9BF31C0619AA6C7F00A9C960 /* finalScheduleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BD219AA6C7F00A9C960 /* finalScheduleData.m */; };
@@ -76,15 +75,12 @@
 		9BF31C0919AA6C7F00A9C960 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BD719AA6C7F00A9C960 /* Images.xcassets */; };
 		9BF31C0F19AA6C7F00A9C960 /* locationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BE019AA6C7F00A9C960 /* locationModel.m */; };
 		9BF31C1119AA6C7F00A9C960 /* MiLLAooLT.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BE219AA6C7F00A9C960 /* MiLLAooLT.png */; };
-		9BF31C1219AA6C7F00A9C960 /* paper_clip_note.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BE319AA6C7F00A9C960 /* paper_clip_note.png */; };
-		9BF31C1319AA6C7F00A9C960 /* papercliptradingup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BE419AA6C7F00A9C960 /* papercliptradingup.jpg */; };
 		9BF31C1419AA6C7F00A9C960 /* ScheduleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BE519AA6C7F00A9C960 /* ScheduleTableCell.xib */; };
 		9BF31C1519AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BE719AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.m */; };
 		9BF31C1619AA6C7F00A9C960 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BE919AA6C7F00A9C960 /* ScheduleTableViewController.m */; };
 		9BF31C1719AA6C7F00A9C960 /* UWaterloo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BEA19AA6C7F00A9C960 /* UWaterloo-Info.plist */; };
 		9BF31C1819AA6C7F00A9C960 /* UWaterloo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31BEC19AA6C7F00A9C960 /* UWaterloo.xcdatamodeld */; };
 		9BF31C1C19AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BF419AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg */; };
-		9BF31C1D19AA6C7F00A9C960 /* wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BF519AA6C7F00A9C960 /* wood.jpg */; };
 		9BF31C1E19AA6C7F00A9C960 /* wood2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BF619AA6C7F00A9C960 /* wood2.jpg */; };
 		9BF31C1F19AA6C7F00A9C960 /* wood2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF31BF719AA6C7F00A9C960 /* wood2.png */; };
 		9BF31C3C19AA6CEB00A9C960 /* JSONModel+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C2319AA6CEB00A9C960 /* JSONModel+CoreData.m */; };
@@ -99,14 +95,10 @@
 		9BF31C4519AA6CEB00A9C960 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C3919AA6CEB00A9C960 /* JSONKeyMapper.m */; };
 		9BF31C4619AA6CEB00A9C960 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C3B19AA6CEB00A9C960 /* JSONValueTransformer.m */; };
 		9BF31C4819AA6DAA00A9C960 /* UWaterloo.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C4719AA6DAA00A9C960 /* UWaterloo.xcdatamodel */; };
-		9BF31C4D19AA797D00A9C960 /* UWaterlooDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C4A19AA797D00A9C960 /* UWaterlooDetailViewController.m */; };
-		9BF31C4E19AA797D00A9C960 /* UWaterlooMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C4C19AA797D00A9C960 /* UWaterlooMasterViewController.m */; };
 		9BF31CB319AABFA100A9C960 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF31CB219AABFA100A9C960 /* CoreData.framework */; };
-		F538053D19B56E21009CB3CD /* notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = F538053C19B56E21009CB3CD /* notepad.png */; };
 		F53F01E719BBD7BD00BE2F7C /* whitePaper.png in Resources */ = {isa = PBXBuildFile; fileRef = F53F01E619BBD7BD00BE2F7C /* whitePaper.png */; };
 		F53F01E919BBE8FF00BE2F7C /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = F53F01E819BBE8FF00BE2F7C /* edit.png */; };
 		F53F01EB19BBF00000BE2F7C /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = F53F01EA19BBF00000BE2F7C /* delete.png */; };
-		F57A761A19BBC85C00E61425 /* notepad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F57A761919BBC85C00E61425 /* notepad.jpg */; };
 		F57A761E19BBCD4F00E61425 /* blank-clipboard.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F57A761D19BBCD4F00E61425 /* blank-clipboard.jpeg */; };
 		F5A9201619AAC779006918C6 /* scheduleFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A9201519AAC779006918C6 /* scheduleFetcher.m */; };
 		F5E1D5BD19B5261B00D75CE6 /* navbar-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E1D5BC19B5261B00D75CE6 /* navbar-iphone.png */; };
@@ -231,7 +223,6 @@
 		9BF31BC919AA6C7F00A9C960 /* CourseScheduleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseScheduleModel.m; sourceTree = "<group>"; };
 		9BF31BCA19AA6C7F00A9C960 /* dateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dateModel.h; sourceTree = "<group>"; };
 		9BF31BCB19AA6C7F00A9C960 /* dateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dateModel.m; sourceTree = "<group>"; };
-		9BF31BCC19AA6C7F00A9C960 /* edit-notes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit-notes.png"; sourceTree = "<group>"; };
 		9BF31BCE19AA6C7F00A9C960 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9BF31BCF19AA6C7F00A9C960 /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
 		9BF31BD019AA6C7F00A9C960 /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
@@ -245,8 +236,6 @@
 		9BF31BDF19AA6C7F00A9C960 /* locationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = locationModel.h; sourceTree = "<group>"; };
 		9BF31BE019AA6C7F00A9C960 /* locationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = locationModel.m; sourceTree = "<group>"; };
 		9BF31BE219AA6C7F00A9C960 /* MiLLAooLT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MiLLAooLT.png; sourceTree = "<group>"; };
-		9BF31BE319AA6C7F00A9C960 /* paper_clip_note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper_clip_note.png; sourceTree = "<group>"; };
-		9BF31BE419AA6C7F00A9C960 /* papercliptradingup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = papercliptradingup.jpg; sourceTree = "<group>"; };
 		9BF31BE519AA6C7F00A9C960 /* ScheduleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleTableCell.xib; sourceTree = "<group>"; };
 		9BF31BE619AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableCellTableViewCell.h; sourceTree = "<group>"; };
 		9BF31BE719AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableCellTableViewCell.m; sourceTree = "<group>"; };
@@ -256,7 +245,6 @@
 		9BF31BEB19AA6C7F00A9C960 /* UWaterloo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UWaterloo-Prefix.pch"; sourceTree = "<group>"; };
 		9BF31BED19AA6C7F00A9C960 /* UWaterloo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UWaterloo.xcdatamodel; sourceTree = "<group>"; };
 		9BF31BF419AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg"; sourceTree = "<group>"; };
-		9BF31BF519AA6C7F00A9C960 /* wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpg; sourceTree = "<group>"; };
 		9BF31BF619AA6C7F00A9C960 /* wood2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood2.jpg; sourceTree = "<group>"; };
 		9BF31BF719AA6C7F00A9C960 /* wood2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood2.png; sourceTree = "<group>"; };
 		9BF31C2219AA6CEB00A9C960 /* JSONModel+CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+CoreData.h"; sourceTree = "<group>"; };
@@ -283,16 +271,10 @@
 		9BF31C3A19AA6CEB00A9C960 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		9BF31C3B19AA6CEB00A9C960 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		9BF31C4719AA6DAA00A9C960 /* UWaterloo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UWaterloo.xcdatamodel; sourceTree = "<group>"; };
-		9BF31C4919AA797D00A9C960 /* UWaterlooDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWaterlooDetailViewController.h; sourceTree = "<group>"; };
-		9BF31C4A19AA797D00A9C960 /* UWaterlooDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWaterlooDetailViewController.m; sourceTree = "<group>"; };
-		9BF31C4B19AA797D00A9C960 /* UWaterlooMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWaterlooMasterViewController.h; sourceTree = "<group>"; };
-		9BF31C4C19AA797D00A9C960 /* UWaterlooMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWaterlooMasterViewController.m; sourceTree = "<group>"; };
 		9BF31CB219AABFA100A9C960 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		F538053C19B56E21009CB3CD /* notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notepad.png; sourceTree = "<group>"; };
 		F53F01E619BBD7BD00BE2F7C /* whitePaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitePaper.png; sourceTree = "<group>"; };
 		F53F01E819BBE8FF00BE2F7C /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
 		F53F01EA19BBF00000BE2F7C /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
-		F57A761919BBC85C00E61425 /* notepad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = notepad.jpg; sourceTree = "<group>"; };
 		F57A761D19BBCD4F00E61425 /* blank-clipboard.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blank-clipboard.jpeg"; sourceTree = "<group>"; };
 		F5A9201419AAC779006918C6 /* scheduleFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduleFetcher.h; sourceTree = "<group>"; };
 		F5A9201519AAC779006918C6 /* scheduleFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scheduleFetcher.m; sourceTree = "<group>"; };
@@ -609,7 +591,6 @@
 				F53F01E819BBE8FF00BE2F7C /* edit.png */,
 				F53F01E619BBD7BD00BE2F7C /* whitePaper.png */,
 				F57A761D19BBCD4F00E61425 /* blank-clipboard.jpeg */,
-				F57A761919BBC85C00E61425 /* notepad.jpg */,
 				F5E1D5BE19B52ADE00D75CE6 /* back-button.png */,
 				F5E1D5BF19B52ADE00D75CE6 /* back-button@2x.png */,
 				F5E1D5C019B52ADE00D75CE6 /* bar-button.png */,
@@ -617,10 +598,6 @@
 				F5E1D5C219B52ADE00D75CE6 /* nav-bar.png */,
 				F5E1D5C319B52ADE00D75CE6 /* nav-bar@2x.png */,
 				F5E1D5BC19B5261B00D75CE6 /* navbar-iphone.png */,
-				9BF31C4919AA797D00A9C960 /* UWaterlooDetailViewController.h */,
-				9BF31C4A19AA797D00A9C960 /* UWaterlooDetailViewController.m */,
-				9BF31C4B19AA797D00A9C960 /* UWaterlooMasterViewController.h */,
-				9BF31C4C19AA797D00A9C960 /* UWaterlooMasterViewController.m */,
 				9BF31BB719AA6C7F00A9C960 /* addScheduleDetailViewController.h */,
 				9BF31BB819AA6C7F00A9C960 /* addScheduleDetailViewController.m */,
 				9BF31BBB19AA6C7F00A9C960 /* calendar.png */,
@@ -638,7 +615,6 @@
 				9BF31BC919AA6C7F00A9C960 /* CourseScheduleModel.m */,
 				9BF31BCA19AA6C7F00A9C960 /* dateModel.h */,
 				9BF31BCB19AA6C7F00A9C960 /* dateModel.m */,
-				9BF31BCC19AA6C7F00A9C960 /* edit-notes.png */,
 				9BF31BCD19AA6C7F00A9C960 /* InfoPlist.strings */,
 				9BF31BCF19AA6C7F00A9C960 /* EventManager.h */,
 				9BF31BD019AA6C7F00A9C960 /* EventManager.m */,
@@ -652,10 +628,7 @@
 				9BF31BDF19AA6C7F00A9C960 /* locationModel.h */,
 				9BF31BE019AA6C7F00A9C960 /* locationModel.m */,
 				9BF31BE219AA6C7F00A9C960 /* MiLLAooLT.png */,
-				9BF31BE319AA6C7F00A9C960 /* paper_clip_note.png */,
-				9BF31BE419AA6C7F00A9C960 /* papercliptradingup.jpg */,
 				9BF31BE519AA6C7F00A9C960 /* ScheduleTableCell.xib */,
-				F538053C19B56E21009CB3CD /* notepad.png */,
 				9BF31BE619AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.h */,
 				9BF31BE719AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.m */,
 				9BF31BE819AA6C7F00A9C960 /* ScheduleTableViewController.h */,
@@ -664,7 +637,6 @@
 				9BF31BEB19AA6C7F00A9C960 /* UWaterloo-Prefix.pch */,
 				9BF31BEC19AA6C7F00A9C960 /* UWaterloo.xcdatamodeld */,
 				9BF31BF419AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg */,
-				9BF31BF519AA6C7F00A9C960 /* wood.jpg */,
 				9BF31BF619AA6C7F00A9C960 /* wood2.jpg */,
 				9BF31BF719AA6C7F00A9C960 /* wood2.png */,
 				F5A9201419AAC779006918C6 /* scheduleFetcher.h */,
@@ -817,19 +789,16 @@
 				9BF31B8819AA6BAF00A9C960 /* notification_success@2x.png in Resources */,
 				9BF31C1C19AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg in Resources */,
 				9BF31C1419AA6C7F00A9C960 /* ScheduleTableCell.xib in Resources */,
-				9BF31C0319AA6C7F00A9C960 /* edit-notes.png in Resources */,
 				F5E1D5BD19B5261B00D75CE6 /* navbar-iphone.png in Resources */,
 				9BF31C1F19AA6C7F00A9C960 /* wood2.png in Resources */,
 				9BF31C0419AA6C7F00A9C960 /* InfoPlist.strings in Resources */,
 				F5E1D5C519B52ADE00D75CE6 /* back-button@2x.png in Resources */,
 				9BF31B9219AA6BC500A9C960 /* btnCheck.png in Resources */,
-				F538053D19B56E21009CB3CD /* notepad.png in Resources */,
 				F5E1D5C719B52ADE00D75CE6 /* bar-button@2x.png in Resources */,
 				9B38785319A7E6C300DA14FF /* UWCourse_iPhone.storyboard in Resources */,
 				9BF31B9319AA6BC500A9C960 /* btnCheck@2x.png in Resources */,
 				F57A761E19BBCD4F00E61425 /* blank-clipboard.jpeg in Resources */,
 				F5E1D5C619B52ADE00D75CE6 /* bar-button.png in Resources */,
-				9BF31C1D19AA6C7F00A9C960 /* wood.jpg in Resources */,
 				5D4F831418D0BAD200903ED0 /* Images.xcassets in Resources */,
 				F53F01E719BBD7BD00BE2F7C /* whitePaper.png in Resources */,
 				F53F01EB19BBF00000BE2F7C /* delete.png in Resources */,
@@ -838,12 +807,9 @@
 				F5E1D5C819B52ADE00D75CE6 /* nav-bar.png in Resources */,
 				9BF31C0919AA6C7F00A9C960 /* Images.xcassets in Resources */,
 				F5E1D5C919B52ADE00D75CE6 /* nav-bar@2x.png in Resources */,
-				9BF31C1219AA6C7F00A9C960 /* paper_clip_note.png in Resources */,
 				9BF31B8719AA6BAF00A9C960 /* notification_success.png in Resources */,
 				9BF31B8A19AA6BAF00A9C960 /* notification_warring@2x.png in Resources */,
-				F57A761A19BBC85C00E61425 /* notepad.jpg in Resources */,
 				9BF31C1719AA6C7F00A9C960 /* UWaterloo-Info.plist in Resources */,
-				9BF31C1319AA6C7F00A9C960 /* papercliptradingup.jpg in Resources */,
 				F53F01E919BBE8FF00BE2F7C /* edit.png in Resources */,
 				F5E1D5C419B52ADE00D75CE6 /* back-button.png in Resources */,
 				5D4F830318D0BAD200903ED0 /* InfoPlist.strings in Resources */,
@@ -870,7 +836,6 @@
 			files = (
 				5D4F833318D0BEA800903ED0 /* CourseFetcher.m in Sources */,
 				5D4F834818D2288B00903ED0 /* DetailVC.m in Sources */,
-				9BF31C4D19AA797D00A9C960 /* UWaterlooDetailViewController.m in Sources */,
 				9BF31B7C19AA6B8A00A9C960 /* SWTableViewCell.m in Sources */,
 				9BF31B7919AA6B8A00A9C960 /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				9BF31B7B19AA6B8A00A9C960 /* SWLongPressGestureRecognizer.m in Sources */,
@@ -900,7 +865,6 @@
 				9BF31C0719AA6C7F00A9C960 /* finalScheduleFeed.m in Sources */,
 				9BF31C0619AA6C7F00A9C960 /* finalScheduleData.m in Sources */,
 				9BF31B9519AA6BC500A9C960 /* MBProgressHUD.m in Sources */,
-				9BF31C4E19AA797D00A9C960 /* UWaterlooMasterViewController.m in Sources */,
 				9BF31C0119AA6C7F00A9C960 /* CourseScheduleModel.m in Sources */,
 				5D4F833918D0EC7700903ED0 /* SubjectTVC.m in Sources */,
 				5D004EF618DC992A00C109F6 /* WebVC.m in Sources */,

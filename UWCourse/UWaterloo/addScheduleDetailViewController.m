@@ -52,17 +52,17 @@
 {
     [super viewDidLoad];
     float currentVersion = 7.0;
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= currentVersion) {
+    /*if ([[[UIDevice currentDevice] systemVersion] floatValue] >= currentVersion) {
         // iOS 7
         
         self.navBar.frame = CGRectMake(self.navBar.frame.origin.x, self.navBar.frame.origin.y+30, self.navBar.frame.size.width, 64);
-    }
-        [self signUpForKeyboardNotifications];
+    }*/
+    [self signUpForKeyboardNotifications];
     //self.tableView.separatorColor = [UIColor clearColor];
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     gestureRecognizer.cancelsTouchesInView = NO;
     [self.tableView addGestureRecognizer:gestureRecognizer];
-    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"wood2.jpg"]];
+    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"wood2.png"]];
     [tempImageView setFrame:self.tableView.frame];
 
     self.tableView.backgroundView = tempImageView;
@@ -81,6 +81,7 @@
         [self setupTimeLabel:[NSDate date]];
 
     }
+    self.tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
 
 }
 
@@ -118,30 +119,23 @@
         [newDevice setValue:self.locationLabel.text forKey:@"taskLocation"];
         [newDevice setValue:self.selectedDate forKey:@"taskFullDate"];
         [newDevice setValue:self.selectedEndDate forKey:@"taskFullEndDate"];
-        [self.event setValue:self.Notes.text forKey:@"notes"];
+        [newDevice setValue:self.Notes.text forKey:@"notes"];
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"EEEE"];
         NSString *dayName = [dateFormatter stringFromDate:self.selectedDate];
-        [self.event setValue:dayName forKey:@"taskDay"];
+        [newDevice setValue:dayName forKey:@"taskDay"];
         if (self.alarmPickerIsShowing){
             NSDate *pickerDate = [self.alarmPicker date];
-            
-            
-            /*UILocalNotification* localNotification = [[UILocalNotification alloc] init];
-            localNotification.fireDate = pickerDate;
-            localNotification.alertBody = self.taskName.text;
-            localNotification.timeZone = [NSTimeZone defaultTimeZone];
-            [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];*/
-
-            // Schedule the notification
             UILocalNotification* localNotification = [[UILocalNotification alloc] init];
             localNotification.fireDate = pickerDate;
             localNotification.alertBody = self.taskName.text;
+            localNotification.soundName = UILocalNotificationDefaultSoundName;
             localNotification.alertAction = @"Show me the item";
             localNotification.timeZone = [NSTimeZone defaultTimeZone];
             localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
             
             [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+            
             
             // Request to reload table view data
             //[[NSNotificationCenter defaultCenter] postNotificationName:@"reloadData" object:self];
@@ -370,6 +364,7 @@
 - (void) hideKeyboard {
     [self.taskName resignFirstResponder];
     [self.locationLabel resignFirstResponder];
+    [self.Notes resignFirstResponder];
 }
 - (void)handleTap:(UITapGestureRecognizer *)recognizer
 {
@@ -394,4 +389,5 @@
 - (IBAction)alarmChanged:(UIDatePicker *)sender {
 
 }
+
 @end

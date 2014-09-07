@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "UWaterlooMasterViewController.h"
+//#import "UWaterlooMasterViewController.h"
 
 @implementation AppDelegate
 
@@ -25,10 +25,10 @@
     sleep(2);
     
     UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
-    if (locationNotification) {
+    //if (locationNotification) {
         // Set icon badge number to zero
         application.applicationIconBadgeNumber = 0;
-    }
+    //}
     UIImage *navBackgroundImage = [UIImage imageNamed:@"nav-bar.png"];
     
     UIImage *barButton = [[UIImage imageNamed:@"bar-button.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
@@ -57,7 +57,7 @@
     //[[UITabBar appearance] setBackgroundImage:tabBarBackground];
     [[UITabBar appearance] setTintColor:[UIColor brownColor]];
     //[[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected.png"]];
-
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;
 }
 							

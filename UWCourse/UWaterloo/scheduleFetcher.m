@@ -54,10 +54,13 @@
                     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
                     [dateFormat setDateFormat:@"HH:mm/MM/dd/yyyy"];
                     
+                    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                    [formatter setDateFormat:@"yyyy"];
+                    NSString *yearString = [formatter stringFromDate:[NSDate date]];
                     
-                    NSString *str=[NSString stringWithFormat:@"%@/%@/2014",[class.date valueForKey:@"start_time"],[class.date valueForKey:@"start_date"]];
+                    NSString *str=[NSString stringWithFormat:@"%@/%@/%@",[class.date valueForKey:@"start_time"],[class.date valueForKey:@"start_date"],yearString];
                     
-                     NSString *str2=[NSString stringWithFormat:@"%@/%@/2014",[class.date valueForKey:@"end_time"],[class.date valueForKey:@"start_date"]];
+                     NSString *str2=[NSString stringWithFormat:@"%@/%@/%@",[class.date valueForKey:@"end_time"],[class.date valueForKey:@"start_date"],yearString];
                     
                     NSManagedObject *Device2 = [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:context];
                     NSDate *startDate=[dateFormat dateFromString:str];
