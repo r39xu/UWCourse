@@ -54,6 +54,10 @@
     
     self.courses = [[managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
     self.tableView.separatorColor = [UIColor clearColor];
+    
+    //CGRect frame = self.tableView.frame;
+	//frame.size.height = frame.size.height - 150;
+    //self.tableView.frame=frame;
     [self.tableView reloadData];
 }
 
@@ -70,18 +74,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self.tableView setContentInset:UIEdgeInsetsMake(130, 0, 70, 0)];
     self.appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     // Make self the delegate and datasource of the table view.
     //self.tblEvents.delegate = self;
     //self.tblEvents.dataSource = self;
     //[self performSelector:@selector(requestAccessToEvents) withObject:nil afterDelay:0.4];
-    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"wood2.png"]];
+    UIImageView *tempImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"blank-clipboard.jpeg"]];
     [tempImageView setFrame:self.tableView.frame];
     selectedIndex=-1;
     self.tableView.backgroundView = tempImageView;
     [self.tableView registerNib:[UINib nibWithNibName:@"ScheduleTableCell" bundle:nil] forCellReuseIdentifier:@"ScheduleTableCell"];
+
+    //CGRect bounds = [self.view bounds];
+    //[self.tableView setBounds:frame];
     //[HUD showUIBlockingIndicatorWithText:@"Loading"];
     
 }
@@ -119,11 +126,11 @@
     NSMutableArray *rightUtilityButtons = [NSMutableArray new];
     
     [rightUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:0.78f green:0.78f blue:0.8f alpha:1.0]
-                                                title:@"Edit"];
+     [UIColor colorWithRed:184/255.0f green:102/255.0f blue:0/255.0f alpha:0.1f]
+                                                icon:[UIImage imageNamed:@"edit.png"]];
     [rightUtilityButtons sw_addUtilityButtonWithColor:
-     [UIColor colorWithRed:1.0f green:0.231f blue:0.188 alpha:1.0f]
-                                                title:@"Delete"];
+     [UIColor colorWithRed:184/255.0f green:102/255.0f blue:0/255.0f alpha:0.1f]
+                                                icon:[UIImage imageNamed:@"delete.png"]];
     // Configure the cell...
     cell.rightUtilityButtons = rightUtilityButtons;
     cell.delegate = self;
@@ -141,12 +148,13 @@
     NSDate *currentTime = [NSDate date];
     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
     [dateFormat setDateFormat:@"yyyy-MM-dd"];
-    NSString *dateString = [dateFormat stringFromDate:currentTime];
+
     //NSString *str=[NSString stringWithFormat:@"%@",[device valueForKey:@"finalDate"]];
-    NSDate *secondDate=[device valueForKey:@"taskDate"];
-    
+    NSDate *secondDate=[device valueForKey:@"taskFullDate"];
+        NSString *dateString = [dateFormat stringFromDate:secondDate];
+
     //NSDate* secondDate = [dateFormat dateFromString:str];
-    NSTimeInterval timeDifference = [secondDate timeIntervalSinceDate:currentTime];
+    //NSTimeInterval timeDifference = [secondDate timeIntervalSinceDate:currentTime];
     
     NSCalendar *sysCalendar = [NSCalendar currentCalendar];
     unsigned int unitFlags = NSHourCalendarUnit | NSMinuteCalendarUnit | NSDayCalendarUnit; //| NSMonthCalendarUnit;
@@ -161,12 +169,8 @@
     NSLog(@"date: %@", dateString);
     long days=[breakdownInfo day];
     UIColor * color = [UIColor colorWithRed:0/255.0f green:182/255.0f blue:21/255.0f alpha:1.0f];
-    if (days<0){
-        days=-days;
-        cell.countDown.textColor=color;
-    } else {
-        cell.countDown.textColor=[UIColor redColor];
-    }
+    
+
     //[cell.textLabel setText:[NSString stringWithFormat:@"%@: %ld days",[device valueForKey:@"catalog_number"],(long)[breakdownInfo day]]];
     /*cell.location.text=[NSString stringWithFormat:@"Location: %@",[device valueForKey:@"finalLocation"]];
      cell.countDown.text=[NSString stringWithFormat:@"%ld",(long)days];
@@ -178,16 +182,53 @@
         if ([breakdownInfo hour]==0){
             cell.countDown.text=[NSString stringWithFormat:@"%ld",(long)[breakdownInfo minute]];
             cell.unitLabel.text=@"Mins";
+            if ([breakdownInfo minute]<0){
+                cell.countDown.textColor=color;
+            } else {
+                cell.countDown.textColor=[UIColor redColor];
+            }
         } else{
             cell.countDown.text=[NSString stringWithFormat:@"%ld",(long)[breakdownInfo hour]];
             cell.unitLabel.text=@"Hours";
+            if ([breakdownInfo hour]<0){
+                cell.countDown.textColor=color;
+            } else {
+                cell.countDown.textColor=[UIColor redColor];
+            }
         }
     } else {
         cell.countDown.text=[NSString stringWithFormat:@"%ld",(long)days];
         cell.unitLabel.text=@"Days";
+        if (days<0){
+            cell.countDown.textColor=color;
+        } else {
+            cell.countDown.textColor=[UIColor redColor];
+        }
     }
+    if (secondDate==NULL){
+        cell.countDown.text=@"N/A";
+    }
+
+    [dateFormat setDateFormat:@"HH:mm"];
+    
+    NSString *day=[device valueForKey:@"taskDay"];
+    NSString *startTime= [dateFormat stringFromDate:[device valueForKey:@"taskFullDate"]];
+    NSString *endTime= [dateFormat stringFromDate:[device valueForKey:@"taskFullEndDate"]];
+    
     cell.courseName.text=[NSString stringWithFormat:@"%@",[device valueForKey:@"taskName"]];
-    cell.Date.text=[dateFormat stringFromDate:secondDate];
+    cell.notes.text=[NSString stringWithFormat:@"Notes: %@",[device valueForKey:@"notes"]];
+    cell.Date.text=[NSString stringWithFormat:@"Date: %@  %@",dateString,day];
+    
+    cell.time.text=[NSString stringWithFormat:@"Time: %@ - %@",startTime,endTime];
+    if (([device valueForKey:@"taskFullDate"]!=NULL)&&([device valueForKey:@"taskFullEndDate"]!=NULL)){
+        breakdownInfo = [sysCalendar components:unitFlags fromDate:[device valueForKey:@"taskFullDate"]  toDate:[device     valueForKey:@"taskFullEndDate"]  options:0];
+        if ([breakdownInfo hour]==0){
+            cell.duration.text=[NSString stringWithFormat:@"Duration: %ld Min",(long)[breakdownInfo minute]];
+        } else {
+            cell.duration.text=[NSString stringWithFormat:@"Duration: %ld Hour %ld Min",(long)[breakdownInfo hour],(long)[breakdownInfo minute]];
+        }
+    }
+
     cell.clipsToBounds = YES;
     
     if (selectedIndex==indexPath.row){
@@ -202,9 +243,9 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (selectedIndex==indexPath.row){
-        return 163;
+        return 260;
     } else {
-        return 81;
+        return 70;
     }
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

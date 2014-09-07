@@ -37,6 +37,7 @@
 - (IBAction)needAlarm:(UISwitch *)sender;
 @property (nonatomic) bool alarmPickerIsShowing;
 @property (strong, nonatomic) IBOutlet UIDatePicker *alarmPicker;
+@property (strong, nonatomic) IBOutlet UITextView *Notes;
 
 @property (strong) NSManagedObject *event;
 @end

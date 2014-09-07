@@ -26,7 +26,7 @@
     feed=[[CourseScheduleFeed alloc] initFromURLWithString:url completion:^(JSONModel *model, JSONModelError *err) {
         
         
-        NSError *error = nil;
+        /*NSError *error = nil;
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Courses"];
         [request setPredicate:[NSPredicate predicateWithFormat:@"catalog_number = %@", courseUrl]];
         //[request setFetchLimit:1];
@@ -34,7 +34,8 @@
         if (![context save:&error]) {
             NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
             
-        }
+        }*/
+        int count=0;
         if (count == 0){
             NSManagedObject *newDevice = [NSEntityDescription insertNewObjectForEntityForName:@"Courses" inManagedObjectContext:context];
             [newDevice setValue:courseUrl forKey:@"catalog_number"];
@@ -53,12 +54,34 @@
                     NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
                     [dateFormat setDateFormat:@"HH:mm/MM/dd/yyyy"];
                     
+                    
                     NSString *str=[NSString stringWithFormat:@"%@/%@/2014",[class.date valueForKey:@"start_time"],[class.date valueForKey:@"start_date"]];
+                    
+                     NSString *str2=[NSString stringWithFormat:@"%@/%@/2014",[class.date valueForKey:@"end_time"],[class.date valueForKey:@"start_date"]];
                     
                     NSManagedObject *Device2 = [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:context];
                     NSDate *startDate=[dateFormat dateFromString:str];
-                    [Device2 setValue:startDate forKey:@"taskDate"];
-                    [Device2 setValue:[NSString stringWithFormat:@"%@ midterm",courseUrl] forKey:@"taskName"];
+                    [Device2 setValue:startDate forKey:@"taskFullDate"];
+                    NSDate *endDate=[dateFormat dateFromString:str2];
+                    [Device2 setValue:endDate forKey:@"taskFullEndDate"];
+                    [dateFormat setDateFormat:@"HH:mm"];
+                    NSDate *startTime=[dateFormat dateFromString:[class.date valueForKey:@"start_time"]];
+                    [Device2 setValue:startTime forKey:@"taskStartTime"];
+                    NSDate *endTime=[dateFormat dateFromString:[class.date valueForKey:@"end_time"]];
+                    [Device2 setValue:endTime  forKey:@"taskEndTime"];
+                    [dateFormat setDateFormat:@"MM/dd"];
+                    NSDate *date=[dateFormat dateFromString:[class.date valueForKey:@"start_date"]];
+                    [Device2 setValue:date  forKey:@"taskDate"];
+                    //find the Day of the event
+                    
+                    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+                    [dateFormatter setDateFormat:@"EEEE"];
+                    NSString *dayName = [dateFormatter stringFromDate:date];
+                    [Device2 setValue:dayName forKey:@"taskDay"];
+                    NSString *name1 = [[NSString stringWithFormat:@"%@ Midterm",courseUrl] stringByReplacingOccurrencesOfString:@"/"
+                                                                                                                  withString:@" "];
+                    [Device2 setValue:name1 forKey:@"taskName"];
+                    
                     
                     
                     NSString *url=[NSString stringWithFormat:@"https://api.uwaterloo.ca/v2/courses/%@/examschedule.json?key=bfa6876183c9fe16289b72828224ede2",courseUrl];
@@ -77,8 +100,22 @@
                         NSString *str=[NSString stringWithFormat:@"%@/%@",[section valueForKey:@"date"],[section valueForKey:@"start_time"]];
                         NSManagedObject *Device2 = [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:context];
                         NSDate *startDate=[dateFormat dateFromString:str];
-                        [Device2 setValue:startDate forKey:@"taskDate"];
-                        [Device2 setValue:[NSString stringWithFormat:@"%@ Final",courseUrl] forKey:@"taskName"];
+                        
+
+                        
+                        [Device2 setValue:startDate forKey:@"taskFullDate"];
+                        [dateFormat setDateFormat:@"HH:mm"];
+                        NSDate *startTime=[dateFormat dateFromString:[section valueForKey:@"start_time"]];
+                        [Device2 setValue:startTime forKey:@"taskStartTime"];
+                        NSDate *endTime=[dateFormat dateFromString:[section valueForKey:@"end_time"]];
+                        [Device2 setValue:endTime  forKey:@"taskEndTime"];
+                        [dateFormat setDateFormat:@"MM/dd"];
+                        
+                        NSDate *date=[dateFormat dateFromString:[section valueForKey:@"start_date"]];
+                        [Device2 setValue:date forKey:@"taskDate"];
+                        NSString *name = [[NSString stringWithFormat:@"%@ Final",courseUrl] stringByReplacingOccurrencesOfString:@"/"
+                                                                    withString:@" "];
+                        [Device2 setValue:name forKey:@"taskName"];
                         [Device2 setValue:[section valueForKey:@"location"] forKey:@"taskLocation"];
                         NSLog(@"Data: %@", finalFeed.data.course);
                         

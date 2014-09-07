@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Courses">
         <attribute name="catalog_number" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="course_id" optional="YES" attributeType="String">
@@ -19,12 +19,16 @@
     <entity name="Task" syncable="YES">
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="taskDate" optional="YES" attributeType="Date" syncable="YES"/>
-        <attribute name="taskEndDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="taskDay" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskEndTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="taskFullDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="taskFullEndDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="taskLocation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="taskName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="taskStartTime" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
     <elements>
         <element name="Courses" positionX="261" positionY="189" width="128" height="210"/>
-        <element name="Task" positionX="142" positionY="279" width="128" height="120"/>
+        <element name="Task" positionX="142" positionY="279" width="128" height="180"/>
     </elements>
 </model>

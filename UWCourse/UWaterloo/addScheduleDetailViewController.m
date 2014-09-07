@@ -26,6 +26,7 @@
 @synthesize taskTimeLabel=_taskTimeLabel;
 @synthesize datePicker=_datePicker;
 @synthesize locationLabel=_locationLabel;
+@synthesize Notes=_Notes;
 
 
 - (NSManagedObjectContext *)managedObjectContext {
@@ -54,10 +55,9 @@
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= currentVersion) {
         // iOS 7
         
-        self.navBar.frame = CGRectMake(self.navBar.frame.origin.x, self.navBar.frame.origin.y, self.navBar.frame.size.width, 64);
+        self.navBar.frame = CGRectMake(self.navBar.frame.origin.x, self.navBar.frame.origin.y+30, self.navBar.frame.size.width, 64);
     }
-    [self setupTimeLabel:[NSDate date]];
-    [self signUpForKeyboardNotifications];
+        [self signUpForKeyboardNotifications];
     //self.tableView.separatorColor = [UIColor clearColor];
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)];
     gestureRecognizer.cancelsTouchesInView = NO;
@@ -70,10 +70,15 @@
     if (self.event){
         self.locationLabel.text=[self.event valueForKey:@"taskLocation"];
         self.taskName.text=[self.event valueForKey:@"taskName"];
-        //[self.taskTimeLabel setText:[self.event valueForKey:@"taskName"]];
-        //[self.locationLabel setText:[self.event valueForKey:@"taskLocation"]];
-        NSDate* date=[self.event valueForKey:@"taskDate"];
+        self.Notes.text=[self.event valueForKey:@"notes"];
+        NSDate* date=[self.event valueForKey:@"taskFullDate"];
+        if (date==NULL){
+            date=[NSDate date];
+        }
         [self setupTimeLabel:date];
+
+    } else {
+        [self setupTimeLabel:[NSDate date]];
 
     }
 
@@ -97,15 +102,27 @@
         // Update existing device
         [self.event setValue:self.taskName.text forKey:@"taskName"];
         [self.event setValue:self.locationLabel.text forKey:@"taskLocation"];
-        [self.event setValue:self.selectedDate forKey:@"taskDate"];
-        
+        [self.event setValue:self.selectedDate forKey:@"taskFullDate"];
+        [self.event setValue:self.selectedEndDate forKey:@"taskFullEndDate"];
+        [self.event setValue:self.Notes.text forKey:@"notes"];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"EEEE"];
+        NSString *dayName = [dateFormatter stringFromDate:self.selectedDate];
+        [self.event setValue:dayName forKey:@"taskDay"];
         
     } else {
+        
         
         NSManagedObject *newDevice = [NSEntityDescription insertNewObjectForEntityForName:@"Task"   inManagedObjectContext:context];
         [newDevice setValue:self.taskName.text forKey:@"taskName"];
         [newDevice setValue:self.locationLabel.text forKey:@"taskLocation"];
-        [newDevice setValue:self.selectedDate forKey:@"taskDate"];
+        [newDevice setValue:self.selectedDate forKey:@"taskFullDate"];
+        [newDevice setValue:self.selectedEndDate forKey:@"taskFullEndDate"];
+        [self.event setValue:self.Notes.text forKey:@"notes"];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+        [dateFormatter setDateFormat:@"EEEE"];
+        NSString *dayName = [dateFormatter stringFromDate:self.selectedDate];
+        [self.event setValue:dayName forKey:@"taskDay"];
         if (self.alarmPickerIsShowing){
             NSDate *pickerDate = [self.alarmPicker date];
             
@@ -150,17 +167,24 @@
     
     self.dateFormatter = [[NSDateFormatter alloc] init];
     [self.dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-    //[self.dateFormatter setTimeFormat:@"HH:mm"];
-    //[self.dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
     [self.dateFormatter setTimeStyle:NSDateFormatterShortStyle];
-    //NSDate *defaultDate = [NSDate date];
+    self.datePicker.date=defaultDate;
+    if ([self.event valueForKey:@"taskFullEndDate"]!=NULL){
+        self.taskTimeLabel.text = [self.dateFormatter stringFromDate:defaultDate];
+    } else {
+        self.taskTimeLabel.text=@"";
+    }
     
-    self.taskTimeLabel.text = [self.dateFormatter stringFromDate:defaultDate];
-    self.endDateLabel.text=[self.dateFormatter stringFromDate:defaultDate];
+    self.endDateLabel.text=[self.dateFormatter stringFromDate:[self.event valueForKey:@"taskFullEndDate"]];
     //self.taskTimeLabel.textColor = [self.tableView tintColor];
-    
+    if ([self.event valueForKey:@"taskFullEndDate"]!=NULL){
+        self.endDatePicker.date=[self.event valueForKey:@"taskFullEndDate"];
+        self.selectedEndDate=[self.event valueForKey:@"taskFullEndDate"];
+    } else {
+        self.endDatePicker.date=defaultDate;
+    }
     self.selectedDate = defaultDate;
-    self.selectedEndDate=defaultDate;
+
     self.endDatePicker.minimumDate=defaultDate;
 }
 
@@ -183,12 +207,15 @@
             height=EndDatePickerHeight;
         }
     }
-    if ((indexPath.section==1)&&(indexPath.row == alarmPickerIndex)){
+    if ((indexPath.section==2)&&(indexPath.row == alarmPickerIndex)){
         if (self.alarmPickerIsShowing==0){
             height=0.0f;
         } else {
             height=alarmPickerHeight;
         }
+    }
+    if (indexPath.section==1){
+            height=70;
     }
 
     
@@ -315,8 +342,9 @@
 - (IBAction)datePickerChanged:(UIDatePicker *)sender {
     self.taskTimeLabel.text=[self.dateFormatter stringFromDate:sender.date];
     self.selectedDate=sender.date;
+    self.endDatePicker.minimumDate=self.selectedDate;
     if ((self.selectedEndDate==NULL)||([self.selectedDate compare:self.selectedEndDate] == NSOrderedDescending)) {
-        self.endDatePicker.minimumDate=self.selectedDate;
+        
         self.endDatePicker.date=self.selectedDate;
         self.endDateLabel.text=[self.dateFormatter stringFromDate:self.selectedDate];
         self.selectedEndDate=self.selectedDate;

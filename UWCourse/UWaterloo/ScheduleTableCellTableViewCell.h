@@ -11,11 +11,12 @@
 
 @interface ScheduleTableCellTableViewCell : SWTableViewCell
 @property (strong, nonatomic) IBOutlet UILabel *unitLabel;
-@property (strong, nonatomic) IBOutlet UIButton *Edit;
 @property (strong, nonatomic) IBOutlet UILabel *courseName;
 @property (strong, nonatomic) IBOutlet UILabel *Date;
 @property (strong, nonatomic) IBOutlet UILabel *countDown;
 @property (strong, nonatomic) IBOutlet UILabel *location;
-- (IBAction)edit:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UILabel *time;
+@property (strong, nonatomic) IBOutlet UILabel *duration;
+@property (strong, nonatomic) IBOutlet UILabel *notes;
 
 @end

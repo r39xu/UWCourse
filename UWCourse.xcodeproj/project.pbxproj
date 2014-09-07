@@ -102,7 +102,20 @@
 		9BF31C4D19AA797D00A9C960 /* UWaterlooDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C4A19AA797D00A9C960 /* UWaterlooDetailViewController.m */; };
 		9BF31C4E19AA797D00A9C960 /* UWaterlooMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF31C4C19AA797D00A9C960 /* UWaterlooMasterViewController.m */; };
 		9BF31CB319AABFA100A9C960 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BF31CB219AABFA100A9C960 /* CoreData.framework */; };
+		F538053D19B56E21009CB3CD /* notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = F538053C19B56E21009CB3CD /* notepad.png */; };
+		F53F01E719BBD7BD00BE2F7C /* whitePaper.png in Resources */ = {isa = PBXBuildFile; fileRef = F53F01E619BBD7BD00BE2F7C /* whitePaper.png */; };
+		F53F01E919BBE8FF00BE2F7C /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = F53F01E819BBE8FF00BE2F7C /* edit.png */; };
+		F53F01EB19BBF00000BE2F7C /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = F53F01EA19BBF00000BE2F7C /* delete.png */; };
+		F57A761A19BBC85C00E61425 /* notepad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F57A761919BBC85C00E61425 /* notepad.jpg */; };
+		F57A761E19BBCD4F00E61425 /* blank-clipboard.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F57A761D19BBCD4F00E61425 /* blank-clipboard.jpeg */; };
 		F5A9201619AAC779006918C6 /* scheduleFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A9201519AAC779006918C6 /* scheduleFetcher.m */; };
+		F5E1D5BD19B5261B00D75CE6 /* navbar-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E1D5BC19B5261B00D75CE6 /* navbar-iphone.png */; };
+		F5E1D5C419B52ADE00D75CE6 /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E1D5BE19B52ADE00D75CE6 /* back-button.png */; };
+		F5E1D5C519B52ADE00D75CE6 /* back-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E1D5BF19B52ADE00D75CE6 /* back-button@2x.png */; };
+		F5E1D5C619B52ADE00D75CE6 /* bar-button.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E1D5C019B52ADE00D75CE6 /* bar-button.png */; };
+		F5E1D5C719B52ADE00D75CE6 /* bar-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E1D5C119B52ADE00D75CE6 /* bar-button@2x.png */; };
+		F5E1D5C819B52ADE00D75CE6 /* nav-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E1D5C219B52ADE00D75CE6 /* nav-bar.png */; };
+		F5E1D5C919B52ADE00D75CE6 /* nav-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5E1D5C319B52ADE00D75CE6 /* nav-bar@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -275,8 +288,21 @@
 		9BF31C4B19AA797D00A9C960 /* UWaterlooMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UWaterlooMasterViewController.h; sourceTree = "<group>"; };
 		9BF31C4C19AA797D00A9C960 /* UWaterlooMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UWaterlooMasterViewController.m; sourceTree = "<group>"; };
 		9BF31CB219AABFA100A9C960 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F538053C19B56E21009CB3CD /* notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notepad.png; sourceTree = "<group>"; };
+		F53F01E619BBD7BD00BE2F7C /* whitePaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whitePaper.png; sourceTree = "<group>"; };
+		F53F01E819BBE8FF00BE2F7C /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		F53F01EA19BBF00000BE2F7C /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		F57A761919BBC85C00E61425 /* notepad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = notepad.jpg; sourceTree = "<group>"; };
+		F57A761D19BBCD4F00E61425 /* blank-clipboard.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "blank-clipboard.jpeg"; sourceTree = "<group>"; };
 		F5A9201419AAC779006918C6 /* scheduleFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scheduleFetcher.h; sourceTree = "<group>"; };
 		F5A9201519AAC779006918C6 /* scheduleFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scheduleFetcher.m; sourceTree = "<group>"; };
+		F5E1D5BC19B5261B00D75CE6 /* navbar-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navbar-iphone.png"; sourceTree = "<group>"; };
+		F5E1D5BE19B52ADE00D75CE6 /* back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button.png"; sourceTree = "<group>"; };
+		F5E1D5BF19B52ADE00D75CE6 /* back-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-button@2x.png"; sourceTree = "<group>"; };
+		F5E1D5C019B52ADE00D75CE6 /* bar-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-button.png"; sourceTree = "<group>"; };
+		F5E1D5C119B52ADE00D75CE6 /* bar-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-button@2x.png"; sourceTree = "<group>"; };
+		F5E1D5C219B52ADE00D75CE6 /* nav-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bar.png"; sourceTree = "<group>"; };
+		F5E1D5C319B52ADE00D75CE6 /* nav-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bar@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -579,6 +605,18 @@
 		9BF31BB619AA6C7F00A9C960 /* UWaterloo */ = {
 			isa = PBXGroup;
 			children = (
+				F53F01EA19BBF00000BE2F7C /* delete.png */,
+				F53F01E819BBE8FF00BE2F7C /* edit.png */,
+				F53F01E619BBD7BD00BE2F7C /* whitePaper.png */,
+				F57A761D19BBCD4F00E61425 /* blank-clipboard.jpeg */,
+				F57A761919BBC85C00E61425 /* notepad.jpg */,
+				F5E1D5BE19B52ADE00D75CE6 /* back-button.png */,
+				F5E1D5BF19B52ADE00D75CE6 /* back-button@2x.png */,
+				F5E1D5C019B52ADE00D75CE6 /* bar-button.png */,
+				F5E1D5C119B52ADE00D75CE6 /* bar-button@2x.png */,
+				F5E1D5C219B52ADE00D75CE6 /* nav-bar.png */,
+				F5E1D5C319B52ADE00D75CE6 /* nav-bar@2x.png */,
+				F5E1D5BC19B5261B00D75CE6 /* navbar-iphone.png */,
 				9BF31C4919AA797D00A9C960 /* UWaterlooDetailViewController.h */,
 				9BF31C4A19AA797D00A9C960 /* UWaterlooDetailViewController.m */,
 				9BF31C4B19AA797D00A9C960 /* UWaterlooMasterViewController.h */,
@@ -617,6 +655,7 @@
 				9BF31BE319AA6C7F00A9C960 /* paper_clip_note.png */,
 				9BF31BE419AA6C7F00A9C960 /* papercliptradingup.jpg */,
 				9BF31BE519AA6C7F00A9C960 /* ScheduleTableCell.xib */,
+				F538053C19B56E21009CB3CD /* notepad.png */,
 				9BF31BE619AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.h */,
 				9BF31BE719AA6C7F00A9C960 /* ScheduleTableCellTableViewCell.m */,
 				9BF31BE819AA6C7F00A9C960 /* ScheduleTableViewController.h */,
@@ -779,21 +818,34 @@
 				9BF31C1C19AA6C7F00A9C960 /* Wood-Panel-iphone-5-wallpaper-ilikewallpaper_com.jpg in Resources */,
 				9BF31C1419AA6C7F00A9C960 /* ScheduleTableCell.xib in Resources */,
 				9BF31C0319AA6C7F00A9C960 /* edit-notes.png in Resources */,
+				F5E1D5BD19B5261B00D75CE6 /* navbar-iphone.png in Resources */,
 				9BF31C1F19AA6C7F00A9C960 /* wood2.png in Resources */,
 				9BF31C0419AA6C7F00A9C960 /* InfoPlist.strings in Resources */,
+				F5E1D5C519B52ADE00D75CE6 /* back-button@2x.png in Resources */,
 				9BF31B9219AA6BC500A9C960 /* btnCheck.png in Resources */,
+				F538053D19B56E21009CB3CD /* notepad.png in Resources */,
+				F5E1D5C719B52ADE00D75CE6 /* bar-button@2x.png in Resources */,
 				9B38785319A7E6C300DA14FF /* UWCourse_iPhone.storyboard in Resources */,
 				9BF31B9319AA6BC500A9C960 /* btnCheck@2x.png in Resources */,
+				F57A761E19BBCD4F00E61425 /* blank-clipboard.jpeg in Resources */,
+				F5E1D5C619B52ADE00D75CE6 /* bar-button.png in Resources */,
 				9BF31C1D19AA6C7F00A9C960 /* wood.jpg in Resources */,
 				5D4F831418D0BAD200903ED0 /* Images.xcassets in Resources */,
+				F53F01E719BBD7BD00BE2F7C /* whitePaper.png in Resources */,
+				F53F01EB19BBF00000BE2F7C /* delete.png in Resources */,
 				9BF31C1119AA6C7F00A9C960 /* MiLLAooLT.png in Resources */,
 				9BF31B8919AA6BAF00A9C960 /* notification_warring.png in Resources */,
+				F5E1D5C819B52ADE00D75CE6 /* nav-bar.png in Resources */,
 				9BF31C0919AA6C7F00A9C960 /* Images.xcassets in Resources */,
+				F5E1D5C919B52ADE00D75CE6 /* nav-bar@2x.png in Resources */,
 				9BF31C1219AA6C7F00A9C960 /* paper_clip_note.png in Resources */,
 				9BF31B8719AA6BAF00A9C960 /* notification_success.png in Resources */,
 				9BF31B8A19AA6BAF00A9C960 /* notification_warring@2x.png in Resources */,
+				F57A761A19BBC85C00E61425 /* notepad.jpg in Resources */,
 				9BF31C1719AA6C7F00A9C960 /* UWaterloo-Info.plist in Resources */,
 				9BF31C1319AA6C7F00A9C960 /* papercliptradingup.jpg in Resources */,
+				F53F01E919BBE8FF00BE2F7C /* edit.png in Resources */,
+				F5E1D5C419B52ADE00D75CE6 /* back-button.png in Resources */,
 				5D4F830318D0BAD200903ED0 /* InfoPlist.strings in Resources */,
 				9BF31BFA19AA6C7F00A9C960 /* calendar.png in Resources */,
 				9BF31C1E19AA6C7F00A9C960 /* wood2.jpg in Resources */,
